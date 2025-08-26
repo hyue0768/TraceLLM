@@ -1,0 +1,139 @@
+{
+  "results": [
+    {
+      "id": 149,
+      "text_signature": "approve(address,uint256)",
+      "hex_signature": "0x095ea7b3"
+    },
+    {
+      "id": 150,
+      "text_signature": "transfer(address,uint256)",
+      "hex_signature": "0xa9059cbb"
+    },
+    {
+      "id": 151,
+      "text_signature": "transferFrom(address,address,uint256)",
+      "hex_signature": "0x23b872dd"
+    },
+    {
+      "id": 152,
+      "text_signature": "balanceOf(address)",
+      "hex_signature": "0x70a08231"
+    },
+    {
+      "id": 153,
+      "text_signature": "allowance(address,address)",
+      "hex_signature": "0xdd62ed3e"
+    },
+    {
+      "id": 154,
+      "text_signature": "totalSupply()",
+      "hex_signature": "0x18160ddd"
+    },
+    {
+      "id": 155,
+      "text_signature": "name()",
+      "hex_signature": "0x06fdde03"
+    },
+    {
+      "id": 156,
+      "text_signature": "symbol()",
+      "hex_signature": "0x95d89b41"
+    },
+    {
+      "id": 157,
+      "text_signature": "decimals()",
+      "hex_signature": "0x313ce567"
+    },
+    {
+      "id": 158,
+      "text_signature": "mint(address,uint256)",
+      "hex_signature": "0x40c10f19"
+    },
+    {
+      "id": 159,
+      "text_signature": "burn(uint256)",
+      "hex_signature": "0x42966c68"
+    },
+    {
+      "id": 160,
+      "text_signature": "burnFrom(address,uint256)",
+      "hex_signature": "0x79cc6790"
+    },
+    {
+      "id": 161,
+      "text_signature": "safeTransfer(address,uint256)",
+      "hex_signature": "0x423f6cef"
+    },
+    {
+      "id": 162,
+      "text_signature": "safeTransferFrom(address,address,uint256)",
+      "hex_signature": "0x42842e0e"
+    },
+    {
+      "id": 163,
+      "text_signature": "safeTransferFrom(address,address,uint256,bytes)",
+      "hex_signature": "0xb88d4fde"
+    },
+    {
+      "id": 164,
+      "text_signature": "setApprovalForAll(address,bool)",
+      "hex_signature": "0xa22cb465"
+    },
+    {
+      "id": 165,
+      "text_signature": "isApprovedForAll(address,address)",
+      "hex_signature": "0xe985e9c5"
+    },
+    {
+      "id": 166,
+      "text_signature": "ownerOf(uint256)",
+      "hex_signature": "0x6352211e"
+    },
+    {
+      "id": 167,
+      "text_signature": "getApproved(uint256)",
+      "hex_signature": "0x081812fc"
+    },
+    {
+      "id": 168,
+      "text_signature": "tokenURI(uint256)",
+      "hex_signature": "0xc87b56dd"
+    },
+    {
+      "id": 169,
+      "text_signature": "supportsInterface(bytes4)",
+      "hex_signature": "0x01ffc9a7"
+    },
+    {
+      "id": 170,
+      "text_signature": "owner()",
+      "hex_signature": "0x8da5cb5b"
+    },
+    {
+      "id": 171,
+      "text_signature": "renounceOwnership()",
+      "hex_signature": "0x715018a6"
+    },
+    {
+      "id": 172,
+      "text_signature": "transferOwnership(address)",
+      "hex_signature": "0xf2fde38b"
+    },
+    {
+      "id": 173,
+      "text_signature": "pause()",
+      "hex_signature": "0x8456cb59"
+    },
+    {
+      "id": 174,
+      "text_signature": "unpause()",
+      "hex_signature": "0x3f4ba83a"
+    },
+    {
+      "id": 175,
+      "text_signature": "paused()",
+      "hex_signature": "0x5c975abb"
+    }
+  ]
+} 

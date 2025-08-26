@@ -1,0 +1,136 @@
+事件分析报告: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+================================================================================
+
+分析时间: 20250818_113606
+K值范围: [0, 1, 2, 3, 4, 5]
+
+--- K=0 分析结果 ---
+状态: ✅ 成功
+Token使用: 13574 (输入:12679, 输出:895)
+攻击者地址: 0x1d23a9c3
+受害者地址: 0x3aa228a8
+路径数量: 30
+Prompt长度: 23796 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "该交易疑似利用闪电贷进行攻击，通过操纵价格或合约逻辑获利。攻击者首先通过闪电贷获取大量资金，然后在协议内部进行一系列操作，包括mint代币、借款、进行Uniswap交易等，最终可能导致协议资金损失或代币价值异常。",
+    "attack_pattern": "闪电贷攻击，可能涉及价格操纵、重入攻击或合约逻辑漏洞利用。",
+    "suspicious_indicators": "频繁的flashLoan调用，紧随其后的mint、borrow、swap操作，以及对getPrice和latestRoundData的重复调用，可能试图操纵价格预言机。"
+  },
+  "attacker_address": "0x1d23a9c3",
+  "victim_address": "0x3aa228a8",
+  "confidence": {
+    "attacker": "HIGH",
+    "victim": "HIGH"
+  },
+  "reasoning": {
+    "attacker": "地...
+----------------------------------------
+
+--- K=1 分析结果 ---
+状态: ✅ 成功
+Token使用: 181120 (输入:180473, 输出:647)
+攻击者地址: 0x1d23a9c3
+受害者地址: 0x3aa228a8
+路径数量: 30
+Prompt长度: 394720 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Blueberry Protocol 遭受了闪电贷攻击，攻击者利用协议的漏洞，通过闪电贷借入大量资金，操纵市场价格，并最终获利。攻击模式涉及闪电贷、价格操纵和重入攻击。",
+    "attack_pattern": "闪电贷攻击，价格操纵，重入攻击",
+    "suspicious_indicators": "1. 大量使用闪电贷；2. 频繁调用 getUnderlyingPrice 和 getPrice 函数，可能存在价格操纵；3. 存在 withdraw -> eth_transfer -> exactInputSingle 这样的调用链，可能存在重入攻击；4. 目标路径中频繁出现 mint 函数，可能存在凭空铸币。"
+  },
+  "attacker_address": "0x1d23a9c3",
+  "victim_address": "0x3aa228a8",
+  "confidence": {
+    "attacker": "HIGH",
+    "victim": "HIGH"
+  ...
+----------------------------------------
+
+--- K=2 分析结果 ---
+状态: ✅ 成功
+Token使用: 181382 (输入:180473, 输出:909)
+攻击者地址: 0x1d23a9c3 (基于所有可疑路径中频繁出现的地址)
+受害者地址: Blueberry Protocol (0x3aa228a8) (基于事件信息)
+路径数量: 30
+Prompt长度: 394720 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "本次安全事件疑似为利用闪电贷进行的重入攻击，攻击者通过借入大量资金，在 Blueberry Protocol 中进行恶意操作，操纵价格或状态，最终获利。攻击模式涉及闪电贷、Uniswap V3 交互、以及 Blueberry Protocol 内部的 mint 和 borrow 流程。",
+    "attack_pattern": "闪电贷重入攻击，可能涉及价格操纵或状态操纵。攻击者利用闪电贷获取大量资金，然后通过一系列操作（包括 Uniswap V3 交易和 Blueberry Protocol 内部函数调用）来操纵协议状态或价格，从而获利。双重 `transferFrom` 调用可能表明存在重入漏洞。",
+    "suspicious_indicators": "1. 频繁的 flashLoan 调用。\n2. 目标路径中包含 mint 和 borrow 等敏感操作。\n3. 存在 uniswapV3SwapCallback 和 transferFrom 的组合，可能涉及 Uniswap V3 ...
+----------------------------------------
+
+--- K=3 分析结果 ---
+状态: ✅ 成功
+Token使用: 181079 (输入:180473, 输出:606)
+攻击者地址: 0x1d23a9c3...
+受害者地址: 0x3aa228a8...
+路径数量: 30
+Prompt长度: 394720 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "该安全事件疑似为利用闪电贷进行的操纵价格攻击，攻击者通过闪电贷借入大量资金，然后在 Blueberry Protocol 中进行 mint 操作，可能导致协议铸造过多的代币，或者利用价格预言机进行操纵，最终获利。",
+    "attack_pattern": "闪电贷 + 价格操纵/mint 攻击",
+    "suspicious_indicators": "1. 大量使用闪电贷；2. 频繁调用 getUnderlyingPrice 和 getPrice 函数，可能用于操纵价格预言机；3. 大量 mint 操作，可能导致通货膨胀；4. 存在 transfer 和 transferFrom 操作，可能用于转移非法所得。"
+  },
+  "attacker_address": "0x1d23a9c3...",
+  "victim_address": "0x3aa228a8...",
+  "confidence": {
+    "attacker": "HIGH",
+    "victim": "HIGH...
+----------------------------------------
+
+--- K=4 分析结果 ---
+状态: ✅ 成功
+Token使用: 181271 (输入:180473, 输出:798)
+攻击者地址: 0x1d23a9c3...
+受害者地址: 0x3aa228a8...
+路径数量: 30
+Prompt长度: 394720 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "该安全事件是针对Blueberry Protocol的闪电贷攻击，攻击者利用协议的漏洞或设计缺陷，通过闪电贷借入大量资金，并在同一笔交易中进行一系列操作，包括mint代币、进行Uniswap V3交易等，最终获利。攻击模式涉及操纵价格、利用重入漏洞或绕过协议的某些安全检查。",
+    "attack_pattern": "闪电贷攻击，涉及操纵价格、重入漏洞或绕过安全检查。攻击者利用闪电贷借入资金，然后通过一系列操作（mint、swap）获利，并在同一交易中偿还贷款。",
+    "suspicious_indicators": "1. 大量使用闪电贷；2. 频繁调用mint函数；3. 涉及Uniswap V3的swap操作；4. 路径中多次出现getUnderlyingPrice和getPrice函数，可能与价格操纵有关；5. 存在withdraw后进行swap操作，可能存在重入风险；6. 目标路径中频繁出现mintVerify, mintAllowed, checkMembership等函数，可能与...
+----------------------------------------
+
+--- K=5 分析结果 ---
+状态: ✅ 成功
+Token使用: 181717 (输入:180473, 输出:1244)
+攻击者地址: 交易发起者，具体地址需要进一步分析确定，但可以肯定的是，该地址发起了包含这些可疑路径的交易。
+受害者地址: Blueberry Protocol (0x3aa228a8)
+路径数量: 30
+Prompt长度: 394720 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "该安全事件疑似为利用闪电贷进行的攻击，攻击者通过借入大量资金，操纵 Blueberry Protocol 内部的价格或状态，最终获利。攻击模式涉及闪电贷、Uniswap V3 交互、以及 Blueberry Protocol 的 mint 和 borrow 功能。",
+    "attack_pattern": "闪电贷攻击，操纵价格或状态，获利。具体手法包括：\n1.  利用闪电贷获取大量资金。\n2.  通过 `exactInputSingle` 或 `exactOutputSingle` 在 Uniswap V3 上进行交易，可能用于操纵价格。\n3.  在 Blueberry Protocol 中进行 mint 和 borrow 操作，利用价格操纵或状态改变获利。\n4.  通过 `transfer` 或 `transferFrom` 函数转移资金。",
+    "suspicious_indicators": "1. 大量使用闪电贷。\n2. 频繁调用 Uniswap V3 的 swap 相关...
+----------------------------------------
+

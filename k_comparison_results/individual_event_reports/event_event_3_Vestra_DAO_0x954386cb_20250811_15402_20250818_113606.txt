@@ -1,0 +1,127 @@
+事件分析报告: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+================================================================================
+
+分析时间: 20250818_113606
+K值范围: [0, 1, 2, 3, 4, 5]
+
+--- K=0 分析结果 ---
+状态: ✅ 成功
+Token使用: 8146 (输入:7144, 输出:1002)
+攻击者地址: 需要进一步分析才能确定具体的攻击者地址。由于没有直接的外部调用者信息，攻击者可能是通过合约交互触发的恶意行为。可能的攻击者地址需要通过分析交易哈希对应的外部调用者来确定。
+受害者地址: 0x954386cb (Vestra DAO)
+路径数量: 19
+Prompt长度: 12554 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "基于提供的可疑路径，初步分析显示可能存在与Vestra DAO合约交互相关的攻击行为。攻击模式可能涉及未经授权的资金转移、黑名单绕过以及对staking机制的利用。多个路径指向对`isBlackListAddress`的检查，暗示攻击者可能试图绕过或利用黑名单机制。此外，对`transferFrom`的频繁调用表明可能存在权限滥用或钓鱼攻击。",
+    "attack_pattern": "可能的攻击模式包括：1) 绕过黑名单机制进行非法操作；2) 利用Uniswap V3进行闪电贷攻击或价格操纵；3) 未经授权的资金转移（transferFrom）；4) 对staking机制的恶意利用（重复start，非法unstake）。",
+    "suspicious_indicators": "1. 频繁调用`isBlackListAddress`；2. 大量`transferFrom`调用；3. `exactInputSingle`和`swap`函数的出现，暗示可能与Uniswap V3交互；4. 重复...
+----------------------------------------
+
+--- K=1 分析结果 ---
+状态: ✅ 成功
+Token使用: 151064 (输入:150213, 输出:851)
+攻击者地址: 需要进一步分析交易数据才能确定具体的攻击者地址。目前只能确定存在潜在的攻击行为。
+受害者地址: 0x954386cb_20250811_154020 (Vestra DAO 合约)
+路径数量: 19
+Prompt长度: 305775 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Vestra DAO 合约可能存在重入攻击和黑名单机制绕过风险。攻击者可能通过闪电贷或其他方式获取大量代币，然后利用合约漏洞进行重复抵押或提取，同时尝试绕过黑名单机制。",
+    "attack_pattern": "重入攻击，黑名单绕过，Uniswap V3 交易利用",
+    "suspicious_indicators": "大量approve, transferFrom, unStake, start, stake 函数调用，频繁的Uniswap V3 swap，以及对isBlackListAddress的检查。"
+  },
+  "attacker_address": "需要进一步分析交易数据才能确定具体的攻击者地址。目前只能确定存在潜在的攻击行为。",
+  "victim_address": "0x954386cb_20250811_154020 (Vestra DAO 合约)",
+  "confidence": {
+    "attacker": "LOW",
+    "victim":...
+----------------------------------------
+
+--- K=2 分析结果 ---
+状态: ✅ 成功
+Token使用: 151192 (输入:150213, 输出:979)
+攻击者地址: 需要进一步分析确定具体地址，但从`transferFrom`和`exactInputSingle`等调用来看，攻击者可能通过合约进行攻击。
+受害者地址: 0x954386cb...
+路径数量: 19
+Prompt长度: 305775 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Vestra DAO 合约可能遭受了重入攻击和黑名单绕过攻击。攻击者利用合约漏洞，在`start`和`stake`函数中进行重入，并可能通过Uniswap V3进行闪电贷攻击，绕过黑名单机制。",
+    "attack_pattern": "重入攻击、闪电贷攻击、黑名单绕过",
+    "suspicious_indicators": "多次`start`和`stake`函数调用，`transferFrom`后紧跟`isBlackListAddress`检查，`exactInputSingle`调用Uniswap V3进行swap，以及`0xf599d321`和`0x22c3bbd7`等不明函数调用。"
+  },
+  "attacker_address": "需要进一步分析确定具体地址，但从`transferFrom`和`exactInputSingle`等调用来看，攻击者可能通过合约进行攻击。",
+  "victim_address": "0x954386cb...",
+  "confidence"...
+----------------------------------------
+
+--- K=3 分析结果 ---
+状态: ✅ 成功
+Token使用: 151140 (输入:150213, 输出:927)
+攻击者地址: 需要进一步分析才能确定具体的攻击者地址，但可以确定攻击者利用了合约漏洞并可能通过Uniswap V3进行清洗。
+受害者地址: 0x954386cb_20250811_154020 (Vestra DAO 合约)
+路径数量: 19
+Prompt长度: 305775 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Vestra DAO 合约可能存在重入攻击和黑名单机制绕过风险。攻击者可能通过闪电贷或其他方式获取初始资金，利用合约漏洞进行重复提款或非法转移资产，并试图通过Uniswap V3等DEX进行清洗。合约中的黑名单机制可能存在缺陷，导致攻击者能够绕过限制。",
+    "attack_pattern": "重入攻击、黑名单绕过、Uniswap V3清洗",
+    "suspicious_indicators": "多次调用`start`和`stake`函数，`transferFrom`后检查黑名单，`exactInputSingle`和`swap`函数调用，`eth_transfer`的大量出现，以及对`isBlackListAddress`的频繁调用。"
+  },
+  "attacker_address": "需要进一步分析才能确定具体的攻击者地址，但可以确定攻击者利用了合约漏洞并可能通过Uniswap V3进行清洗。",
+  "victim_address": "0x954386cb_20250811...
+----------------------------------------
+
+--- K=4 分析结果 ---
+状态: ✅ 成功
+Token使用: 151239 (输入:150213, 输出:1026)
+攻击者地址: 需要进一步分析具体交易的调用者地址，但从模式上看，攻击者是发起 `exactInputSingle` 或 `start`/`stake` 交易的地址。
+受害者地址: 0x954386cb... (Vestra DAO 合约地址)
+路径数量: 19
+Prompt长度: 305775 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Vestra DAO 合约可能存在黑名单绕过漏洞，攻击者通过 Uniswap V3 交换代币，并在 `unStake` 或 `start` 函数中利用 `transferFrom` 转移代币，最终受益。`isBlackListAddress` 函数的调用表明合约存在黑名单机制，但攻击者可能绕过了该机制。",
+    "attack_pattern": "黑名单绕过，Uniswap V3 交换，`transferFrom` 转移代币",
+    "suspicious_indicators": "1. 大量 `approve` 调用后紧跟 `transferFrom`，可能存在授权滥用。\n2. `unStake` 和 `start` 函数中存在 `transferFrom` 调用，可能存在未经授权的代币转移。\n3. `isBlackListAddress` 函数的调用表明存在黑名单机制，但攻击者可能绕过了该机制。\n4. 频繁调用 Uniswap V3 的 `exactInputSingle` 和 `...
+----------------------------------------
+
+--- K=5 分析结果 ---
+状态: ✅ 成功
+Token使用: 151320 (输入:150213, 输出:1107)
+攻击者地址: 需要进一步分析交易哈希 a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798 和 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7 才能确定攻击者地址。目前信息不足以直接识别。
+受害者地址: 0x954386cb_20250811_154020 (Vestra DAO)
+路径数量: 19
+Prompt长度: 305775 字符
+
+LLM分析内容（前500字符）:
+----------------------------------------
+```json
+{
+  "analysis": {
+    "summary": "Vestra DAO 合约可能存在漏洞，攻击者利用该漏洞进行未授权的资金转移，并通过 Uniswap V3 进行清洗。攻击模式涉及未经授权的 `transferFrom` 调用，可能与黑名单机制绕过有关。",
+    "attack_pattern": "未经授权的资金转移，可能利用了合约的权限控制漏洞或黑名单机制的缺陷。攻击者可能通过 `start` 或 `stake` 函数触发 `transferFrom`，然后通过 Uniswap V3 清洗资金。还存在 `unStake` 函数相关的可疑行为，可能允许用户在被列入黑名单后提取资金。",
+    "suspicious_indicators": "1. 大量 `transferFrom` 调用与 `isBlackListAddress` 检查相关联，表明可能存在黑名单绕过尝试。\n2. 频繁的 `approve` 调用，可能为后续的 `transferFrom` 操作铺平道路。\n3. 涉及 Uniswap V3 的 `exactInputSing...
+----------------------------------------
+

@@ -1,0 +1,9 @@
+Method,Type,Macro_Attack_Hit_Rate,Macro_Precision,Macro_Recall,Macro_F1,Micro_Attack_Hit_Rate,Micro_F1,Files_Evaluated
+Logistic Regression,ml,0.8392,0.225,0.8392,0.323,0.802,0.361,15
+Random Forest,ml,0.8124,0.212,0.8124,0.307,0.750,0.338,15
+Score,traditional,0.7889
+MLP+Embedding,deep_learning,0.7673,0.209,0.7673,0.300,0.741,0.334,15
+GNN-CallTree-GIN,graph,0.7340
+XGBoost,ml,0.7333,0.192,0.7333,0.277,0.672,0.303,15
+GNN-CallTree-SAGE,graph,0.7033
+Semantic-based,traditional,0.6941,0.154,0.6941,0.232,0.526,0.237,15

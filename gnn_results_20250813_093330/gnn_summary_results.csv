@@ -1,0 +1,3 @@
+Method,Type,Macro_Attack_Hit_Rate,Macro_Precision,Macro_Recall,Macro_F1,Micro_Attack_Hit_Rate,Micro_F1,Files_Evaluated
+GNN-CallTree-GIN,deep_learning_gnn,0.7340,0.201,0.7340,0.286,0.707,0.318,15
+GNN-CallTree-SAGE,deep_learning_gnn,0.7033,0.194,0.7033,0.276,0.681,0.307,15

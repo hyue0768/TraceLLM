@@ -1,0 +1,91 @@
+event_name,k_neighbors,total_tokens,prompt_tokens,completion_tokens,attacker_address,victim_address,num_paths,prompt_length
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,0,9970,9071,899,0x9daee0cc,0x67104175,30,16638
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,1,87058,86294,764,未明确识别出攻击者地址，需要进一步分析交易的调用者和合约交互。,0x9daee0cc (Dough Finance 合约地址，从多条路径中提取),30,169473
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,2,204214,203281,933,未明确识别出攻击者地址，需要进一步分析具体交易中的外部调用者。,0x67104175 (Dough Finance协议合约),30,418184
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,3,285658,284640,1018,根据提供的路径信息，无法直接确定攻击者地址。需要进一步分析交易的输入数据和事件日志，才能确定攻击发起者的具体地址。但可以确定的是，攻击者通过ROOT节点发起攻击。,0x67104175 (Dough Finance协议),30,608270
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,4,317334,316420,914,未明确识别出攻击者地址，需要进一步分析具体交易的外部调用者。,0x67104175...,30,685252
+event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv,5,332298,331571,727,未提供，需要进一步分析交易详情确定。,0x67104175 (Dough Finance),30,722240
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,0,9787,9102,685,根据提供的路径信息，无法直接确定攻击者地址。需要查看交易的from地址。,UwU Lend协议 (0x841ddf09),30,16620
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,1,97295,96175,1120,未明确，需要进一步分析具体交易执行细节，但可以确定攻击合约地址为0x841ddf09...,UwU Lend 协议,30,191836
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,2,283638,283013,625,未明确识别出攻击者合约或EOA地址，但ROOT节点代表了攻击发起点，需要进一步分析ROOT节点的调用者。,UwU Lend 协议 (0x841ddf09...),30,591426
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,3,374281,373298,983,0x9235e0662e230bdfa94f56f4932fd09a95fea17e,0x841ddf09e429b455448f3780101e3d5113a3d09,30,807385
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,4,434537,433581,956,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易发起者和合约调用链。,UwU Lend 协议 (0x841ddf09...),30,964346
+event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv,5,467426,466599,827,未明确识别出攻击者合约地址，但可以确定攻击者通过合约发起闪电贷，并进行后续操作。,UwU Lend 协议,30,1050312
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,0,8152,6902,1250,需要进一步分析才能确定具体的攻击者地址。由于没有提供交易发起者信息，无法直接从路径中确定。但是，可以推断攻击者是调用`upgradeToAndCall`、`multicall`、`startBridgeTokensViaAcross`等函数的地址。,Pike Finance 合约地址 (0x19066f74) 可以被认为是受害者，因为它被攻击者试图控制或利用。此外，跨链桥和相关资产的持有者也可能是受害者。,22,12602
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,1,26808,25766,1042,根据现有信息无法直接确定攻击者地址，但可以推断攻击者控制了可以调用`upgradeToAndCall`的地址，并可能通过`multicall`发起攻击。,0x19066f74 (Pike Finance 合约),22,51532
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,2,47353,46136,1217,未明确识别出单一攻击者地址，但需要关注发起 `upgradeToAndCall` 和 `multicall` 交易的地址，以及与 `eth_transfer` 相关的地址。由于 `shield` 函数的存在，追踪攻击者地址的难度增加。,Pike Finance 协议本身，以及使用该协议的用户。协议的漏洞导致用户资金面临风险。,22,96396
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,3,60064,58954,1110,未明确识别出攻击者地址，需要进一步分析具体交易的调用者。,0x19066f74_20250806_112841 (Pike Finance合约),22,124740
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,4,60062,58954,1108,根据提供的路径信息，无法直接确定唯一的攻击者地址。需要进一步分析交易的调用者和`upgradeToAndCall`中传入的恶意合约地址。但可以确定攻击与代理合约升级相关，因此发起升级的地址高度可疑。,0x19066f74 (Pike Finance 合约地址),22,124740
+event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv,5,59905,58954,951,未明确识别出攻击者地址，需要进一步分析交易发起者和合约部署者。,0x19066f74 (Pike Finance 合约地址),22,124740
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,0,9707,9018,689,无法确定，需要进一步分析具体地址。,0xfcd4acbc (JokInTheBoxETH),30,16599
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,1,35201,34198,1003,无法确定，需要更多信息。可能与合约 `0x85c9f92b` 相关，也可能是发起交易的外部账户。,可能为 JokInTheBoxETH 合约 (0xfcd4acbc) 或 Uniswap V2 池子，具体取决于攻击模式。,30,68216
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,2,62103,60976,1127,无法从提供的路径中直接确定攻击者地址，但需要进一步分析与 ROOT 节点相关的外部调用者地址。,0xfcd4acbc (JokInTheBoxETH),30,129346
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,3,83057,81999,1058,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易发起者和资金流向。,0xfcd4acbc (JokInTheBoxETH),30,180706
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,4,102573,101398,1175,"Potentially the address initiating the 'unstake' calls and receiving the 'transfer' calls after unstaking, but without more context, it's hard to pinpoint. Further analysis is needed to identify the exact attacker address.",0xfcd4acbc (JokInTheBoxETH contract) and potentially users who have staked tokens in the contract.,30,229459
+event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv,5,120295,119255,1040,未明确识别，但可能与频繁调用 unstake 和 swap 函数的地址相关。需要进一步分析链上数据以确定。,0xfcd4acbc (JokInTheBoxETH 合约),30,275294
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,0,10162,9340,822,0x1d23a9c3...,0x3aa228a8...,30,17490
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,1,70526,69434,1092,根据提供的路径信息，无法直接确定攻击者地址。需要进一步分析交易的输入数据和合约交互来确定攻击发起者。但是，可以确定的是，攻击者利用了ROOT地址发起的交易。,0x3aa228a8 (Blueberry Protocol),30,141031
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,2,137191,135996,1195,f0464b01d962f714eee9d4392b2494524d0e10ce,0x3aa228a8,30,289630
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,3,228693,227650,1043,0x1d23a9c3,0x3aa228a8,30,494522
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,4,301843,301131,712,"The attacker address cannot be definitively determined from the provided paths alone. The `ROOT` address, representing the transaction initiator, is flagged as suspicious, but more information is needed to confirm it as the attacker. The address initiating the flashLoan is a strong candidate.",0x3aa228a8 (Blueberry Protocol),30,663785
+event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv,5,368712,368106,606,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易的调用者。,0x3aa228a8 (Blueberry Protocol),30,816279
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,0,4545,3790,755,需要进一步分析才能确定，目前无法从给定的路径中直接识别攻击者地址。,Shezmu协议 (0xa3a64255),12,6521
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,1,13222,12466,756,需要进一步分析确定，目前无法从提供的路径中直接识别攻击者地址。ROOT节点代表交易发起者，但具体地址未知。,Shezmu协议 (0xa3a64255),12,22813
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,2,19570,18763,807,根据提供的路径信息，无法直接确定攻击者地址。ROOT节点代表交易发起者，但需要结合链上数据才能确定具体地址。因此，暂时无法确定攻击者地址。,根据路径信息，受害者可能是借贷协议本身，或者使用该协议的用户。由于攻击者可能通过操纵价格或利率来获利，协议的稳定性和用户的资产可能受到威胁。0xa3a64255是事件源文件的一部分，可能与受攻击的合约有关，但需要更多信息才能确认。,12,34796
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,3,22282,21633,649,根据提供的信息，无法直接确定攻击者地址。需要进一步分析 ROOT 节点的具体地址。,根据提供的信息，无法直接确定受害者地址。但可以推断受害者是受到预言机价格影响的借贷协议。,12,39514
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,4,23641,22915,726,ROOT,Shezmu (0xa3a64255),12,42037
+event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv,5,23502,22915,587,根据目前的信息无法直接确定攻击者地址，需要进一步分析ROOT的调用者。,0xa3a64255 (Shezmu),12,42037
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,0,10151,8964,1187,0xbdbc91ab (多个路径的中心节点，疑似攻击合约),0x356e7481 (Barley Finance合约),30,15347
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,1,52150,51165,985,0xbdbc91ab,Barley Finance (0x356e7481),30,95442
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,2,109032,108055,977,需要进一步分析才能确定，但可能与合约 `0x7f3ad32c` 或调用 `exactInput` 和 `swap` 的地址有关。,Barley Finance 协议 (可能涉及合约 `0xbdbc91ab`) 以及受影响的用户。,30,204317
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,3,163292,162585,707,未明确识别出攻击者地址，需要进一步分析具体交易的外部调用者。,0xbdbc91ab,30,309967
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,4,191382,190452,930,Unknown. The provided paths do not directly reveal the attacker's address. Further analysis of the full transaction trace is needed to identify the initial caller.,0xbdbc91ab (Likely a core contract of Barley Finance),30,365561
+event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv,5,199420,198078,1342,需要进一步分析才能确定攻击者地址，但发起交易的地址（ROOT）被标记为可疑，可能与攻击者有关。,Barley Finance协议 (0x356e7481),30,380513
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,0,9900,9108,792,无法直接从提供的路径中确定攻击者地址。需要进一步分析交易的调用者和合约交互情况。,0x53635bf7 (Spectra合约地址，从源文件名推断),30,16367
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,1,61471,60437,1034,未明确识别出攻击者地址，需要进一步分析ROOT节点的调用者。,0x53635bf7 (Spectra协议),30,112985
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,2,132789,131721,1068,未明确识别出攻击者地址，需要进一步分析交易发起者和资金流向。,0x53635bf7 (Spectra协议),30,252608
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,3,180143,179057,1086,无法直接从提供的路径中确定攻击者地址，需要结合交易hash进一步分析。,0x53635bf7 (Spectra协议),30,345703
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,4,216186,215409,777,无法从提供的路径中直接识别攻击者地址。需要进一步分析ROOT节点的调用者。,0x53635bf7 (Spectra),30,420196
+event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv,5,253868,252850,1018,未明确识别出攻击者地址，需要进一步分析交易发起者和相关合约的交互。,0x53635bf7 (Spectra协议地址),30,497066
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,0,6993,5797,1196,需要进一步分析才能确定具体的攻击者地址，但可以确定的是，与交易hash `a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798` 和 `213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7` 相关的外部账户很可能参与了攻击。,0x954386cb (Vestra DAO合约地址),19,10246
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,1,23061,22195,866,无法直接从提供的路径中确定攻击者地址。需要进一步分析调用`start`、`stake`、`unStake`、`exactInputSingle`等函数的外部账户。,0x954386cb (Vestra DAO),19,39883
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,2,39673,38768,905,无法直接从提供的路径中确定明确的攻击者地址。`ROOT`节点代表交易发起者，但需要进一步分析交易详情才能确定具体地址。不过，可以确定的是，攻击者与调用`exactInputSingle`和`swap`等Uniswap V3相关函数的地址有关。,0x954386cb (Vestra DAO),19,72235
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,3,53245,52037,1208,未明确识别出攻击者地址，但需要关注与`exactInputSingle`、`swap`、`transferFrom`等函数交互的外部地址。,0x954386cb (Vestra DAO),19,101185
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,4,56906,56056,850,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易的外部调用者和合约创建者。但可以推断攻击者控制的合约地址可能为`0xf599d321`或`0x22c3bbd7`。,0x954386cb (Vestra DAO),19,110109
+event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv,5,59092,58443,649,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易的外部调用者。,0x954386cb (Vestra DAO),19,115650
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,0,10646,9573,1073,0x11c61ad3 (多个路径中出现，疑似攻击合约),Prisma Finance (0x7e39e3b3),30,17898
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,1,72486,71440,1046,0x7e39e3b3...,Prisma Finance 协议,30,145297
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,2,140064,139085,979,0x7e39e3b3...,Prisma Finance 协议,30,296581
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,3,195899,194487,1412,"Potentially the address initiating the transaction (ROOT), but further analysis is needed to confirm. The transaction hash is 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7 and 7c58e683b2c8fdc1780e3a730d99d00fd7ebeb331e19fa3870ff2481c83dc048",Prisma Finance protocol (0x7e39e3b3_20250811_164442_labeled.csv) and potentially individual Trove users.,30,425512
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,4,223540,222291,1249,0x00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7,0x7e39e3b3,30,491629
+event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv,5,245247,244004,1243,"The attacker address cannot be definitively determined from the provided paths alone. The `ROOT` node represents the entry point of the transaction, but it doesn't directly reveal the attacker's address. Further analysis of the full transaction trace and contract interactions is needed to identify the originating address.",0x7e39e3b3 (Prisma Finance),30,545493
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,0,10707,9366,1341,无法确定，需要节点详情来确定发起交易的外部账户地址。,0xb90cf1d7 (Wise Lending 合约),30,16798
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,1,183295,182134,1161,未明确识别出攻击者合约地址，但0x0826c023可能为攻击者部署的中间合约，用于发起闪电贷和执行恶意操作。,0xb90cf1d7 (Wise Lending),30,323305
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,2,483337,482569,768,未明确识别出攻击者地址，但ROOT节点被标记为可疑，可能为攻击发起合约。,0xb90cf1d7 (Wise Lending),30,891490
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,3,678436,677662,774,未明确识别出攻击者合约地址，但0x0826c023合约高度可疑，可能为攻击者合约。,0xb90cf1d7 (Wise Lending),30,1275591
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,4,787618,786817,801,未明确识别出攻击者合约或EOA地址，但ROOT节点被标记为可疑，可能为攻击发起点。需要进一步分析ROOT节点的调用者。,0xb90cf1d7... (Wise Lending协议),30,1493633
+event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv,5,835727,834884,843,未明确识别出攻击者地址，但ROOT节点被标记为可疑，需要进一步分析。,0xb90cf1d7 (Wise Lending协议合约),30,1591415
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,0,9216,8684,532,无法直接从提供的路径中确定攻击者地址，需要进一步分析交易的调用者和合约交互。,UniLend协议 (0x55f5f805),30,15100
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,1,62430,61568,862,需要进一步分析才能确定，但可以肯定的是，发起这些交易的ROOT地址是攻击者控制的。,UniLend协议，具体合约地址需要进一步分析，但0x55f5f805是UniLend相关合约。,30,107925
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,2,133665,132596,1069,未明确识别出攻击者地址，需要进一步分析交易的调用者和合约交互情况。,0x55f5f805 (UniLend),30,240518
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,3,197596,196719,877,需要进一步分析交易的具体执行情况才能确定攻击者地址，但可以确定的是，攻击者通过ROOT发起交易。,0x55f5f805 (UniLend),30,365442
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,4,233002,231969,1033,"Potentially the address initiating the transaction (ROOT), further investigation needed to pinpoint the exact EOA or contract.",UniLend protocol (0x55f5f805),30,436403
+event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv,5,240721,239644,1077,未明确识别出攻击者地址，需要进一步分析交易发起地址和合约交互情况。,0x55f5f805 (UniLend),30,450352
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,0,10137,8809,1328,c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d,0xebc29199,30,16015
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,1,83478,82338,1140,未提供，需要进一步分析交易详情才能确定攻击者地址。但可以确定攻击发起于Euler Finance协议的交互。,0x863df8af (Euler Finance Market Contract),30,160116
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,2,161308,160188,1120,根据提供的路径信息，无法直接确定攻击者地址。需要进一步分析`executeOperation`的调用者，或者`flashLoan`的发起者来确定攻击者地址。但可以确定的是，攻击者通过某个合约（0x863df8af或0x9f443549）发起了攻击。,Euler Finance协议，具体来说，是受到攻击的Euler Finance合约地址（0xebc29199）。,30,322621
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,3,268115,267060,1055,c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d (交易发起者),0xebc29199 (Euler Finance),30,550332
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,4,324110,323133,977,c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d,0xebc29199,30,674118
+event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv,5,327575,326819,756,c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d,0xebc29199,30,682970
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,0,9513,8256,1257,需要进一步分析才能确定攻击者地址，但可以推断攻击者地址参与了swap、transferFrom、withdraw等操作，可能与交易hash 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4 和 1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9 相关的地址。,OTSea 协议本身可能就是受害者，或者是在 OTSea 协议中进行操作的用户。,28,14666
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,1,35697,34972,725,未明确识别出攻击者地址，但交易hash 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4和1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9相关的外部账户可能与攻击有关。,OTSea合约 (0x00000000_20250806_110443_labeled.csv),28,64598
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,2,60044,59337,707,未明确识别出攻击者地址。需要进一步分析交易发起地址和合约交互地址。,OTSea 协议 (0x00000000_20250806_110443_labeled.csv),28,116402
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,3,79671,79030,641,未明确识别出攻击者地址，需要进一步分析交易详情和合约代码。,OTSea协议 (0x00000000),28,161048
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,4,101411,100439,972,Unknown,OTSea (0x00000000),28,211936
+event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv,5,123682,122581,1101,未明确识别出攻击者地址，需要进一步分析交易哈希 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4 和 1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9 的外部调用者。,OTSea 协议 (0x00000000_20250806_110443_labeled.csv),28,264988
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,0,6428,5531,897,需要进一步分析才能确定攻击者地址，但可以肯定的是，发起交易的地址与这些可疑路径密切相关。,Dexible协议 (0x684083f3) 是主要的受害者，因为攻击尝试利用该协议的函数和机制。,18,10187
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,1,32494,31472,1022,无法直接从提供的路径中确定攻击者地址。需要进一步分析交易的调用者和相关合约的交互。,0x684083f3 (Dexible合约地址),18,63616
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,2,65161,64429,732,未明确识别出攻击者地址，需要进一步分析交易的调用者和相关参数。,0x684083f3 (Dexible合约),18,141164
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,3,72016,71037,979,无法从提供的路径中直接识别攻击者地址。需要进一步分析交易的输入数据和事件日志，才能确定发起恶意操作的外部账户地址。,Dexible 协议 (0x684083f3) 是潜在的受害者。攻击可能导致协议资金损失、不公平的奖励分配或协议状态被操纵。,18,156620
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,4,71867,71037,830,无法直接从提供的路径中确定攻击者地址。需要进一步分析交易的输入数据和合约状态变化才能确定。,0x684083f3 (Dexible合约地址),18,156620
+event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv,5,71748,71037,711,无法直接从提供的路径中确定明确的攻击者地址。需要进一步分析交易的调用者和合约交互情况。,0x684083f3 (Dexible合约地址),18,156620

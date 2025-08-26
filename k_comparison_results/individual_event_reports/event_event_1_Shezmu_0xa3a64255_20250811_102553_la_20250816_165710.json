@@ -1,0 +1,204 @@
+{
+  "event_name": "event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv",
+  "analysis_timestamp": "20250816_165710",
+  "k_value_results": {
+    "k_0": {
+      "k_neighbors": 0,
+      "token_usage": {
+        "prompt_tokens": 2275,
+        "completion_tokens": 231,
+        "total_tokens": 2506
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且所有路径的节点数、边数均为0。这意味着没有提供任何实际的交易执行信息，无法进行有效的安全分析。因此，无法识别攻击者或受害者地址。\",\n    \"attack_pattern\": \"由于缺乏交易执行信息，无法识别任何攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且不包含任何节点或边，因此无法识别攻击者地址。没有资金流出或恶意操作的证据。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且不包含任何节点或边，因此无法识别受害者地址。没有资金流入或损失发生的证据。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且所有路径的节点数、边数均为0。这意味着没有提供任何实际的交易执行信息，无法进行有效的安全分析。因此，无法识别攻击者或受害者地址。",
+            "attack_pattern": "由于缺乏交易执行信息，无法识别任何攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且不包含任何节点或边，因此无法识别攻击者地址。没有资金流出或恶意操作的证据。",
+            "victim": "由于所有路径都被标记为“正常路径”且不包含任何节点或边，因此无法识别受害者地址。没有资金流入或损失发生的证据。"
+          }
+        }
+      },
+      "prompt_length": 3865,
+      "num_paths": 12
+    },
+    "k_1": {
+      "k_neighbors": 1,
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 234,
+        "total_tokens": 2507
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都显示节点数、边数均为0。这意味着没有提供任何实际的交易执行路径信息，无法进行有效的安全分析。\",\n    \"attack_pattern\": \"由于缺乏交易执行路径信息，无法识别任何攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且没有提供任何节点或边的信息，无法识别攻击者地址。没有资金流向、方法调用或合约交互的证据。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且没有提供任何节点或边的信息，无法识别受害者地址。没有资金流向、方法调用或合约交互的证据。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都显示节点数、边数均为0。这意味着没有提供任何实际的交易执行路径信息，无法进行有效的安全分析。",
+            "attack_pattern": "由于缺乏交易执行路径信息，无法识别任何攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且没有提供任何节点或边的信息，无法识别攻击者地址。没有资金流向、方法调用或合约交互的证据。",
+            "victim": "由于所有路径都被标记为“正常路径”且没有提供任何节点或边的信息，无法识别受害者地址。没有资金流向、方法调用或合约交互的证据。"
+          }
+        }
+      },
+      "prompt_length": 3863,
+      "num_paths": 12
+    },
+    "k_2": {
+      "k_neighbors": 2,
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 248,
+        "total_tokens": 2521
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有提供任何实际的交易执行信息或合约交互数据。因此，无法识别攻击者或受害者地址。\",\n    \"attack_pattern\": \"由于缺乏数据，无法识别任何攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且没有提供任何节点或边信息，因此无法确定攻击者地址。没有资金流出、恶意操作或异常行为模式可以分析。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且没有提供任何节点或边信息，因此无法确定受害者地址。没有资金流入或损失发生的位置可以分析。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有提供任何实际的交易执行信息或合约交互数据。因此，无法识别攻击者或受害者地址。",
+            "attack_pattern": "由于缺乏数据，无法识别任何攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且没有提供任何节点或边信息，因此无法确定攻击者地址。没有资金流出、恶意操作或异常行为模式可以分析。",
+            "victim": "由于所有路径都被标记为“正常路径”且没有提供任何节点或边信息，因此无法确定受害者地址。没有资金流入或损失发生的位置可以分析。"
+          }
+        }
+      },
+      "prompt_length": 3863,
+      "num_paths": 12
+    },
+    "k_3": {
+      "k_neighbors": 3,
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 239,
+        "total_tokens": 2512
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都为空（节点数、边数均为0）。这意味着没有足够的信息来识别攻击者或受害者。所有路径都指向同一个交易哈希，但没有提供关于该交易的任何细节。\",\n    \"attack_pattern\": \"由于缺乏信息，无法识别攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且没有节点或边，因此无法确定攻击者地址。没有资金流向、方法调用或合约创建的信息。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且没有节点或边，因此无法确定受害者地址。没有资金流向、方法调用或合约创建的信息。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且所有路径的上下文统计信息都为空（节点数、边数均为0）。这意味着没有足够的信息来识别攻击者或受害者。所有路径都指向同一个交易哈希，但没有提供关于该交易的任何细节。",
+            "attack_pattern": "由于缺乏信息，无法识别攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且没有节点或边，因此无法确定攻击者地址。没有资金流向、方法调用或合约创建的信息。",
+            "victim": "由于所有路径都被标记为“正常路径”且没有节点或边，因此无法确定受害者地址。没有资金流向、方法调用或合约创建的信息。"
+          }
+        }
+      },
+      "prompt_length": 3863,
+      "num_paths": 12
+    },
+    "k_4": {
+      "k_neighbors": 4,
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 239,
+        "total_tokens": 2512
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且上下文统计信息显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有足够的信息来识别攻击者或受害者。所有路径都与同一个交易哈希相关联，但缺乏交易内部的调用信息。\",\n    \"attack_pattern\": \"由于缺乏交易执行细节，无法识别攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法确定攻击者地址。没有资金流出或异常行为的证据。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法确定受害者地址。没有资金流入或损失发生的证据。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且上下文统计信息显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有足够的信息来识别攻击者或受害者。所有路径都与同一个交易哈希相关联，但缺乏交易内部的调用信息。",
+            "attack_pattern": "由于缺乏交易执行细节，无法识别攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法确定攻击者地址。没有资金流出或异常行为的证据。",
+            "victim": "由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法确定受害者地址。没有资金流入或损失发生的证据。"
+          }
+        }
+      },
+      "prompt_length": 3863,
+      "num_paths": 12
+    },
+    "k_5": {
+      "k_neighbors": 5,
+      "token_usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 250,
+        "total_tokens": 2523
+      },
+      "identified_addresses": {
+        "attacker": "UNKNOWN",
+        "victim": "UNKNOWN"
+      },
+      "llm_analysis": {
+        "raw_response": "```json\n{\n  \"analysis\": {\n    \"summary\": \"所有提供的路径都被标记为“正常路径”，并且上下文统计信息显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有足够的信息来识别攻击者或受害者。所有路径都与同一个交易哈希相关联，但缺乏交易内部的调用信息和状态变化，无法进行有效的安全分析。\",\n    \"attack_pattern\": \"由于缺乏信息，无法识别攻击模式。\"\n  },\n  \"attacker_address\": \"UNKNOWN\",\n  \"victim_address\": \"UNKNOWN\",\n  \"confidence\": {\n    \"attacker\": \"LOW\",\n    \"victim\": \"LOW\"\n  },\n  \"reasoning\": {\n    \"attacker\": \"由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法识别攻击者地址。没有资金流出、恶意操作或异常行为模式的证据。\",\n    \"victim\": \"由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法识别受害者地址。没有资金流入或损失发生的证据。\"\n  }\n}\n```",
+        "parsed_data": {
+          "analysis": {
+            "summary": "所有提供的路径都被标记为“正常路径”，并且上下文统计信息显示节点数、路径节点数、邻居节点数和边数均为0。这意味着没有足够的信息来识别攻击者或受害者。所有路径都与同一个交易哈希相关联，但缺乏交易内部的调用信息和状态变化，无法进行有效的安全分析。",
+            "attack_pattern": "由于缺乏信息，无法识别攻击模式。"
+          },
+          "attacker_address": "UNKNOWN",
+          "victim_address": "UNKNOWN",
+          "confidence": {
+            "attacker": "LOW",
+            "victim": "LOW"
+          },
+          "reasoning": {
+            "attacker": "由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法识别攻击者地址。没有资金流出、恶意操作或异常行为模式的证据。",
+            "victim": "由于所有路径都被标记为“正常路径”且缺乏节点和边的信息，无法识别受害者地址。没有资金流入或损失发生的证据。"
+          }
+        }
+      },
+      "prompt_length": 3863,
+      "num_paths": 12
+    }
+  }
+}

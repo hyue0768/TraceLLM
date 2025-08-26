@@ -1,0 +1,3284 @@
+上下文路径分析报告
+==================================================
+
+分析配置:
+  - Top-K路径: 30
+  - K邻居: 3
+  - 输入目录: /home/os/shuzheng/whole_pipeline/path_datasets_labeled
+
+处理结果:
+  - 处理文件: 15/15
+  - 可疑路径总数: 399
+  - LR宏平均命中率: 0.858
+  - LR宏平均F1: 0.319
+
+路径上下文详情:
+------------------------------
+
+文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: 1299dc5e869a028d
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transfer(address,uint256) -> transfer(address,uint256)
+
+  2. 路径ID: 76e9a5c59a8fe93c
+交易Hash: 9f497c7d974b2a3bf9a1250ca08891607053921463ad61fe593148e9b426bd09
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> eth_transfer -> eth_transfer
+
+  3. 路径ID: 7576fa4beb138193
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> isFlashBorrower(address)
+
+  4. 路径ID: 75a92173c2277183
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> getACLManager()
+
+  5. 路径ID: 081664fe0e6ca76c
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> 0x2e7263ea
+
+  6. 路径ID: 2b37852a1f003d6d
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transferUnderlyingTo(address,uint256)
+
+  7. 路径ID: 518f99ed85aa5824
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x9daee0cc -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)
+
+  8. 路径ID: 5341e1f7a473208e
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> withdraw(address,uint256,address) -> getPriceOracle()
+
+  9. 路径ID: 447056902aed20b7
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> repay(address,uint256,uint256,address) -> 0x40e95de6
+
+  10. 路径ID: 4ea86ae51973f134
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> burn(address,uint256,uint256) -> burn(address,uint256,uint256)
+
+  11. 路径ID: 4a7dd4810055ff89
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> burn(address,uint256,uint256) -> handleAction(address,uint256,uint256) -> handleAction(address,uint256,uint256)
+
+  12. 路径ID: c97f94eea61b6091
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> totalSupply() -> getReserveNormalizedIncome(address) -> calculateInterestRates((uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,address)) -> balanceOf(address) -> balanceOf(address)
+
+  13. 路径ID: 261be58b8110f26c
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> supply(address,uint256,address,uint16) -> 0x1913f161
+
+  14. 路径ID: 184449005f6ece13
+交易Hash: 2c98beaffe38d8cfb8111c9db1ba5215d134ebefc3b4faeea749aa301ea5432a
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> transfer(address,uint256) -> transfer(address,uint256)
+
+  15. 路径ID: b559e1a01e4d4185
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> repay(address,uint256,uint256,address) -> repay(address,uint256,uint256,address)
+
+  16. 路径ID: 472eddce5afaa1c9
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> repay(address,uint256,uint256,address) -> scaledTotalSupply() -> scaledTotalSupply()
+
+  17. 路径ID: 4558c868ddd72eb9
+交易Hash: 4d52f0dad3ddb7ac5523c51a75a9acd47b244e536b240d692784305b69ca6ab5
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x5b8b87a8 -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> getReserveNormalizedVariableDebt(address)
+
+  18. 路径ID: 2e714e05aa7cdc18
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> mint(address,address,uint256,uint256) -> mint(address,address,uint256,uint256)
+
+  19. 路径ID: 44ab16d073f886e3
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> supply(address,uint256,address,uint16) -> scaledTotalSupply() -> scaledTotalSupply()
+
+  20. 路径ID: 472a0ae16540d5ab
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> swapExactTokensForTokens(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256) -> transfer(address,uint256)
+
+  21. 路径ID: d859f70e3d1bf805
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> supply(address,uint256,address,uint16) -> supply(address,uint256,address,uint16)
+
+  22. 路径ID: 17b2f874f1da15b3
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> calculateInterestRates((uint256,uint256,uint256,uint256,uint256,uint256,uint256,address,address)) -> balanceOf(address) -> balanceOf(address)
+
+  23. 路径ID: cf032aaac2b2c9af
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(address,address,uint256,uint256) -> handleAction(address,uint256,uint256) -> handleAction(address,uint256,uint256)
+
+  24. 路径ID: bd902e270b9b6e32
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x75b4b22d -> 0x9e12a4db -> 0x9e12a4db
+
+  25. 路径ID: 8b61d33c2212f0b8
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> getReserveNormalizedVariableDebt(address)
+
+  26. 路径ID: da70a91c1abfa9d9
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x5b8b87a8 -> balanceOf(address) -> balanceOf(address)
+
+  27. 路径ID: baa09294c93fb93c
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> balanceOf(address) -> balanceOf(address)
+
+  28. 路径ID: 48d02dc7771002f3
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdraw(address,uint256,address) -> 0x186dea44
+
+  29. 路径ID: 779a5e22420c2edc
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> executeOperation(address[],uint256[],uint256[],address,bytes) -> allowance(address,address) -> allowance(address,address)
+
+  30. 路径ID: 08725207d4a02ff3
+交易Hash: 92cdcc732eebf47200ea56123716e337f6ef7d5ad714a2295794fdc6031ebb2e
+源文件: event_event_12_Dough_Finance_0x67104175_20250806_112111_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(address,uint256,address) -> scaledTotalSupply() -> scaledTotalSupply()
+
+------------------------------
+
+文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: 82162c07d5655218
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> borrow(address,uint256,uint256,uint16,address) -> getAssetPrice(address) -> getAssetPrice(address) -> getPrice() -> latestAnswer() -> latestAnswer()
+
+  2. 路径ID: 0769f7c6436b1411
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 7
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> onMorphoFlashLoan(uint256,bytes) -> 0x3e9bd0fc -> transfer(address,uint256) -> getReserveNormalizedIncome(address) -> getReserveNormalizedIncome(address)
+
+  3. 路径ID: 6d38d06e50b95d00
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> onMorphoFlashLoan(uint256,bytes) -> 0x3e9bd0fc -> transfer(address,uint256) -> transfer(address,uint256)
+
+  4. 路径ID: 0f12d497c65882a3
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedIncome(address) -> getAssetPrice(address) -> getAssetPrice(address) -> getPrice()
+
+  5. 路径ID: 3681a1115d2546d4
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 8
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> getAssetPrice(address) -> getAssetPrice(address) -> getPrice() -> latestAnswer() -> latestAnswer()
+
+  6. 路径ID: 2d99f1726a130f7e
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> getAssetPrice(address) -> getAssetPrice(address) -> getPrice()
+
+  7. 路径ID: 703696d8f19f8262
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> getPrice(address) -> price_oracle() -> price_oracle()
+
+  8. 路径ID: 4aee86b0fde11f7a
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> borrow(address,uint256,uint256,uint16,address) -> getAssetPrice(address) -> latestAnswer() -> latestAnswer()
+
+  9. 路径ID: 28b1aff52af1b5f7
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> getPrice(address) -> getPrice(address) -> latestRoundData() -> latestRoundData()
+
+  10. 路径ID: 5bc9d712b0b9d3a7
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 7
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> withdraw(address,uint256,address) -> balanceOf(address) -> getReserveNormalizedIncome(address) -> getAssetPrice(address) -> latestAnswer() -> latestAnswer()
+
+  11. 路径ID: 2f88cdcb9d81df9c
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> finalizeTransfer(address,address,address,uint256,uint256,uint256) -> getAssetPrice(address) -> latestAnswer() -> latestAnswer()
+
+  12. 路径ID: 09fe21dee4271c9d
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedIncome(address) -> getAssetPrice(address) -> latestAnswer() -> latestAnswer()
+
+  13. 路径ID: 1095026ce7bb9790
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> borrow(address,uint256,uint256,uint16,address) -> borrow(address,uint256,uint256,uint16,address)
+
+  14. 路径ID: aa14168e50e66658
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(address,uint256,uint256) -> handleAction(address,uint256,uint256) -> userInfo(address,address)
+
+  15. 路径ID: 401cdfdb628d21c5
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedIncome(address) -> scaledTotalSupply() -> scaledTotalSupply()
+
+  16. 路径ID: 1f2f160edbd61600
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> withdraw(address,uint256,address) -> balanceOf(address) -> getReserveNormalizedIncome(address) -> 0xd09db04a
+
+  17. 路径ID: ab944a1c35679713
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> withdraw(address,uint256,address) -> balanceOf(address) -> getReserveNormalizedIncome(address) -> 0xe6170424
+
+  18. 路径ID: b18d65db615fc895
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> transfer(address,uint256)
+
+  19. 路径ID: 2909cb8a6fe18990
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(address,address,uint256,uint256) -> handleAction(address,uint256,uint256) -> userInfo(address,address)
+
+  20. 路径ID: d74ee129908d3336
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> borrow(address,uint256,uint256,uint16,address) -> getPriceOracle()
+
+  21. 路径ID: 702da19c71e834cf
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> withdraw(address,uint256,address) -> balanceOf(address) -> getReserveNormalizedIncome(address) -> getPriceOracle()
+
+  22. 路径ID: 02c012cd90c7f426
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> balanceOf(address) -> getReserveNormalizedVariableDebt(address) -> getAssetPrice(address) -> latestAnswer() -> latestAnswer()
+
+  23. 路径ID: 6912815d689a6775
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> exchange(int128,int128,uint256,uint256,address) -> transfer(address,uint256) -> transfer(address,uint256)
+
+  24. 路径ID: ed555f5fd4c73c80
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> transferUnderlyingTo(address,uint256) -> transfer(address,uint256)
+
+  25. 路径ID: ce80c4c5e8f1b5c4
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> exchange(uint256,uint256,uint256,uint256,bool,address) -> transfer(address,uint256)
+
+  26. 路径ID: 3a82c4975eb7d6a1
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> mint(address,uint256,uint256) -> mint(address,uint256,uint256)
+
+  27. 路径ID: 02058b2b24dc45cf
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> burn(address,address,uint256,uint256) -> transfer(address,uint256)
+
+  28. 路径ID: ae021a5ce12fe279
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> deposit(address,uint256,address,uint16) -> scaledTotalSupply() -> scaledTotalSupply()
+
+  29. 路径ID: 5c1adae852e85653
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> withdraw(address,uint256,address) -> balanceOf(address) -> getReserveNormalizedIncome(address) -> getReserveNormalizedIncome(address)
+
+  30. 路径ID: 0dc7d6dcee74e0f6
+交易Hash: 9235e0662e230bdfa94f56f4932fd09a95fea17e4b9b44a4f40a59449e216110
+源文件: event_event_13_UwU_Lend_0x841ddf09_20250806_112739_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> mint(address,address,uint256,uint256) -> mint(address,address,uint256,uint256)
+
+------------------------------
+
+文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+可疑路径数: 22
+
+  1. 路径ID: 15e6a7d5fb9d0734
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> upgradeToAndCall(address,bytes) -> proxiableUUID()
+
+  2. 路径ID: 4a6326d69ef462ee
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> upgradeToAndCall(address,bytes) -> 0xfbd28ffb
+
+  3. 路径ID: 72fde10edf5fa6ee
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> upgradeToAndCall(address,bytes) -> upgradeToAndCall(address,bytes)
+
+  4. 路径ID: 8d776e2b0fd4aa95
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[]) -> transferFrom(address,address,uint256)
+
+  5. 路径ID: 0886804e0f92859f
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> upgradeToAndCall(address,bytes) -> eth_transfer
+
+  6. 路径ID: 6db22e1ff9265a0e
+交易Hash: a38aa16354122520b56485ad8fd239f2983afe7b524165361044d9b5ee808fed
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> startBridgeTokensViaAcross((bytes32,string,string,address,address,address,uint256,uint256,bool,bool),(int64,uint32,bytes,uint256)) -> deposit(address,address,uint256,uint256,int64,uint32,bytes,uint256) -> deposit()
+
+  7. 路径ID: 0f59d8cf90cd6b8d
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[]) -> balanceOf(address)
+
+  8. 路径ID: b4f139700cb3f928
+交易Hash: a38aa16354122520b56485ad8fd239f2983afe7b524165361044d9b5ee808fed
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> startBridgeTokensViaAcross((bytes32,string,string,address,address,address,uint256,uint256,bool,bool),(int64,uint32,bytes,uint256)) -> deposit(address,address,uint256,uint256,int64,uint32,bytes,uint256) -> deposit(address,address,uint256,uint256,int64,uint32,bytes,uint256)
+
+  9. 路径ID: 56bd7357bfc3ec57
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> wrapBase(uint256)
+
+  10. 路径ID: 937ec49d327de242
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[]) -> poseidon(bytes32[2])
+
+  11. 路径ID: c64d259c7b2874a8
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[])
+
+  12. 路径ID: 9f448c5c52b9dda4
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> deposit()
+
+  13. 路径ID: ff98c7e054b16d15
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[]) -> poseidon(bytes32[3])
+
+  14. 路径ID: a18711cedd04c5df
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> allowance(address,address)
+
+  15. 路径ID: 13f55525b18c5c86
+交易Hash: a38aa16354122520b56485ad8fd239f2983afe7b524165361044d9b5ee808fed
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> startBridgeTokensViaAcross((bytes32,string,string,address,address,address,uint256,uint256,bool,bool),(int64,uint32,bytes,uint256)) -> startBridgeTokensViaAcross((bytes32,string,string,address,address,address,uint256,uint256,bool,bool),(int64,uint32,bytes,uint256))
+
+  16. 路径ID: 59b57e0228ffcd3c
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[]) -> shield(((bytes32,(uint8,address,uint256),uint120),(bytes32[3],bytes32))[])
+
+  17. 路径ID: b7be7bec4844d184
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> multicall(bool,(address,bytes,uint256)[]) -> approve(address,uint256)
+
+  18. 路径ID: 47a969aace15cb31
+交易Hash: dd7959cdbc0e71f88f12f25c40226326e1caf25e41943dbf4473b6071530a239
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 2
+上下文节点数: 2
+边数: 2
+路径序列: ROOT -> eth_transfer
+
+  19. 路径ID: 9489bcd0263fc844
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 4
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0xf2afdff3 -> initialize(address,address,address,address,uint16,uint16) -> initialize(address,address,address,address,uint16,uint16)
+
+  20. 路径ID: e8166b22378643d4
+交易Hash: e2912b8bf34d561983f2ae95f34e33ecc7792a2905a3e317fcc98052bce66431
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> f2afdff300
+
+  21. 路径ID: 27e82b97e5eb32a3
+交易Hash: a38aa16354122520b56485ad8fd239f2983afe7b524165361044d9b5ee808fed
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> 1fd8010c00
+
+  22. 路径ID: 35d1d6506d4332be
+交易Hash: f8ce549fe83ecaf0d889ef5bda0b613081cefdad5bd82237e3a9014584a95d11
+源文件: event_event_14_Pike_Finance_0x19066f74_20250806_112841_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> e4899c1300
+
+------------------------------
+
+文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: a219e3c1eb5256f4
+交易Hash: e8277ef6ba8611bd12dc5a6e7ca4b984423bc0b3828159f83b466fdcf4fe054f
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 4
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0xb61705a0 -> unstake(uint256) -> transfer(address,uint256)
+
+  2. 路径ID: 1e12fda57a245055
+交易Hash: e8277ef6ba8611bd12dc5a6e7ca4b984423bc0b3828159f83b466fdcf4fe054f
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> unstake(uint256)
+
+  3. 路径ID: 01b9e644e49acbce
+交易Hash: e8277ef6ba8611bd12dc5a6e7ca4b984423bc0b3828159f83b466fdcf4fe054f
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> unstake(uint256) -> transfer(address,uint256)
+
+  4. 路径ID: 7e0be3a0be58991d
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 7
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256)
+
+  5. 路径ID: f1cf243ad8c521ce
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 7
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> balanceOf(address)
+
+  6. 路径ID: f65afb86bf132dbc
+交易Hash: 85100102d21b605b0b32c8281d534990949f105df459567072e7e1770b34aafb
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> 0x85c9f92b -> balanceOf(address)
+
+  7. 路径ID: fe1dbf755e8b661d
+交易Hash: 85100102d21b605b0b32c8281d534990949f105df459567072e7e1770b34aafb
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> 0x85c9f92b -> transfer(address,uint256)
+
+  8. 路径ID: c8fb5553e797318c
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x81cdf138 -> balanceOf(address)
+
+  9. 路径ID: db05b5de4b90339b
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> balanceOf(address)
+
+  10. 路径ID: 19c7a06c06e0709e
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256)
+
+  11. 路径ID: 36d8e1e937e6f5af
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> balanceOf(address)
+
+  12. 路径ID: a9394e73fcbe2f95
+交易Hash: 3ae947b12787ccc5003d842b20abba4b337a7a10ef47978c99f263ba3244b7d7
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer
+
+  13. 路径ID: b308f541828272d8
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> getReserves()
+
+  14. 路径ID: 14f942cfd6b2534f
+交易Hash: 3ae947b12787ccc5003d842b20abba4b337a7a10ef47978c99f263ba3244b7d7
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer -> eth_transfer
+
+  15. 路径ID: df62f7d14a3c0d15
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> balanceOf(address)
+
+  16. 路径ID: f6d941fb5a03261d
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> WETH()
+
+  17. 路径ID: 5ee5ba77bb9b899c
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> getReserves()
+
+  18. 路径ID: 123f18bcb2b76ec4
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256)
+
+  19. 路径ID: 289daf3c42e3ea68
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x81cdf138 -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256)
+
+  20. 路径ID: 8566fe8701fb8cdf
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> balanceOf(address)
+
+  21. 路径ID: 2136af262ce6218a
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256)
+
+  22. 路径ID: ab7621658c9bbee0
+交易Hash: e8277ef6ba8611bd12dc5a6e7ca4b984423bc0b3828159f83b466fdcf4fe054f
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> b61705a000
+
+  23. 路径ID: cbeff974cfbfe5f4
+交易Hash: 9dc5a6c599272a9e79ad93bced30263dbe439d8f6dd725ca0781f88d6515065b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> 81cdf13800
+
+  24. 路径ID: 388a7b9bdd254721
+交易Hash: 90c1ca4b31d5427f2bca9d84c7a0f61ec0f512e037cc028edb408b2b15203a0b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> a9059cbb00
+
+  25. 路径ID: f588d21f918f255a
+交易Hash: 90c1ca4b31d5427f2bca9d84c7a0f61ec0f512e037cc028edb408b2b15203a0b
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> transfer(address,uint256)
+
+  26. 路径ID: 6fdb739fc08cb198
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> getReserves()
+
+  27. 路径ID: 714014d29010917f
+交易Hash: 85100102d21b605b0b32c8281d534990949f105df459567072e7e1770b34aafb
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> contract_creation_or_eth_transfer
+
+  28. 路径ID: dd5aaa881b9e1899
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x81cdf138 -> approve(address,uint256)
+
+  29. 路径ID: e9594f21b8e021ab
+交易Hash: f2fe4ba118acdd8553d1d915c812b1571431b98d2da85c2886af5fa8c789431e
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> swap(uint256,uint256,address,bytes) -> balanceOf(address)
+
+  30. 路径ID: 7be59f939713f346
+交易Hash: d14f5d5181c181d1c0734ebf7976199652caaad91fad9391b8a725407a284852
+源文件: event_event_15_JokInTheBoxETH_0xfcd4acbc_20250806_113026_labeled.csv
+路径节点数: 2
+上下文节点数: 2
+边数: 2
+路径序列: ROOT -> eth_transfer
+
+------------------------------
+
+文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: a34406ce0fce75d3
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> balanceOf(address)
+
+  2. 路径ID: 903cd8a792652830
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> checkMembership(address,address)
+
+  3. 路径ID: 9830b23a560fa3a8
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> transferFrom(address,address,uint256)
+
+  4. 路径ID: b33b106157c8ac42
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> mintAllowed(address,address,uint256)
+
+  5. 路径ID: acf98258a75257d6
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> mintVerify(address,address,uint256,uint256)
+
+  6. 路径ID: cb78128ff09db394
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> getBorrowRate(uint256,uint256,uint256)
+
+  7. 路径ID: d223a14e79462b7d
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> getAccountSnapshot(address) -> delegateToImplementation(bytes)
+
+  8. 路径ID: baf6d9d5a1d97c6a
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> mint(uint256) -> mint(uint256)
+
+  9. 路径ID: 0c1b3aa831f8d98d
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> borrow(uint256) -> borrowAllowed(address,address,uint256) -> getUnderlyingPrice(address) -> underlying()
+
+  10. 路径ID: ce8add61744b0bfc
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> transfer(address,uint256)
+
+  11. 路径ID: 693cf8445f590930
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> borrow(uint256) -> borrowAllowed(address,address,uint256) -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address)
+
+  12. 路径ID: 4481c164d03af419
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 8
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> borrow(uint256) -> borrowAllowed(address,address,uint256) -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address) -> latestRoundData() -> latestRoundData()
+
+  13. 路径ID: 75308e9b257c55c8
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> borrow(uint256) -> borrowAllowed(address,address,uint256) -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address) -> getPrice(address)
+
+  14. 路径ID: eba86caff73c6f25
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> enterMarkets(address[])
+
+  15. 路径ID: 710b7f61067e9d36
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> getFlashLoanFeePercentage()
+
+  16. 路径ID: b43580be6761b19e
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x1d23a9c3 -> flashLoan(address,address[],uint256[],bytes) -> balanceOf(address)
+
+  17. 路径ID: 46d53fbac5279d0c
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> borrow(uint256) -> getBorrowRate(uint256,uint256,uint256)
+
+  18. 路径ID: a812070216a91355
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address) -> latestRoundData() -> latestRoundData()
+
+  19. 路径ID: dc4b6af8b031e2ef
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> getUnderlyingPrice(address) -> underlying()
+
+  20. 路径ID: ec10656042675259
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> uniswapV3SwapCallback(int256,int256,bytes) -> transferFrom(address,address,uint256)
+
+  21. 路径ID: 2cb86a2eab582f72
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address)
+
+  22. 路径ID: c7c03bcf05678f09
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> getUnderlyingPrice(address) -> getPrice(address) -> getPrice(address) -> getPrice(address)
+
+  23. 路径ID: ff2244ff48846799
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> uniswapV3SwapCallback(int256,int256,bytes) -> transferFrom(address,address,uint256)
+
+  24. 路径ID: a9746b00838666bf
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> uniswapV3SwapCallback(int256,int256,bytes) -> transferFrom(address,address,uint256)
+
+  25. 路径ID: 4b104902db06649e
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> transfer(address,uint256) -> transfer(address,uint256)
+
+  26. 路径ID: af03e0513dd3aebd
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer
+
+  27. 路径ID: cc58063f4bcffac0
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> borrow(uint256) -> borrow(uint256)
+
+  28. 路径ID: 6730fd3b3a86943d
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> transfer(address,uint256)
+
+  29. 路径ID: 3566f2573d39b53b
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> balanceOf(address)
+
+  30. 路径ID: ef70f7c8e3fb665a
+交易Hash: f0464b01d962f714eee9d4392b2494524d0e10ce3eb3723873afd1346b8b06e4
+源文件: event_event_1_Blueberry_Protocol_0x3aa228a8_20250806_104150_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> getAccountSnapshot(address) -> getAccountSnapshot(address)
+
+------------------------------
+
+文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+可疑路径数: 12
+
+  1. 路径ID: ecc3f0084dbf46c6
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> borrow(uint256) -> 0x175e8eb8 -> 0x175e8eb8
+
+  2. 路径ID: 4eb5d3d94ecb0362
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> borrow(uint256) -> 0x175e8eb8 -> latestRoundData() -> latestRoundData()
+
+  3. 路径ID: 5b9610ef126d2db6
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> borrow(uint256) -> borrow(uint256)
+
+  4. 路径ID: c821dd79935fdd69
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> addCollateral(uint256) -> transferFrom(address,address,uint256)
+
+  5. 路径ID: 779b01895649635c
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> addCollateral(uint256) -> addCollateral(uint256)
+
+  6. 路径ID: 695678318c8ede5c
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> eth_transfer
+
+  7. 路径ID: ad17d4af3b012284
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> mint(address,uint256)
+
+  8. 路径ID: da9b647bda4e0220
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> transfer(address,uint256)
+
+  9. 路径ID: 976624e9b060fa29
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> decimals() -> decimals()
+
+  10. 路径ID: d98e69f5d77d8d2f
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> decimals()
+
+  11. 路径ID: ba8574301c957c46
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> balanceOf(address)
+
+  12. 路径ID: 0a0957d0bc9a08f0
+交易Hash: 39328ea4377a8887d3f6ce91b2f4c6b19a851e2fc5163e2f83bbc2fc136d0c71
+源文件: event_event_1_Shezmu_0xa3a64255_20250811_102553_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> approve(address,uint256)
+
+------------------------------
+
+文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: ed27a37d5f27ea18
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 6
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> callback(bytes) -> bond(address,uint256) -> balanceOf(address)
+
+  2. 路径ID: 45dc68aa66b5477e
+交易Hash: 2a50db3dac1b4468d226deb53cb34737669b5f93848ac04d4e296ade06f9876c
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0xbdbc91ab -> callback(bytes) -> bond(address,uint256) -> balanceOf(address)
+
+  3. 路径ID: ce0df117b2d3bd8e
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0xbdbc91ab -> callback(bytes) -> bond(address,uint256) -> transferFrom(address,address,uint256)
+
+  4. 路径ID: c67076a7aadff109
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0xbdbc91ab -> callback(bytes) -> balanceOf(address)
+
+  5. 路径ID: 6d7ee6d9ff4e88ae
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> debond(uint256,address[],uint8[]) -> transfer(address,uint256)
+
+  6. 路径ID: c04c4be9026f969b
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0xbdbc91ab -> transfer(address,uint256)
+
+  7. 路径ID: b5e9ddbd0e540ad9
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> transfer(address,uint256)
+
+  8. 路径ID: 33464d3b373f92ea
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> callback(bytes) -> balanceOf(address)
+
+  9. 路径ID: b699ccfc02387cc8
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> debond(uint256,address[],uint8[]) -> balanceOf(address)
+
+  10. 路径ID: e51955b24696dfb8
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0xbdbc91ab -> balanceOf(address)
+
+  11. 路径ID: edf2c5e9fc209633
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 6
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> callback(bytes) -> bond(address,uint256) -> transferFrom(address,address,uint256)
+
+  12. 路径ID: f7e71f38b36e9689
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> balanceOf(address)
+
+  13. 路径ID: 9a7878918e1bd73b
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0xbdbc91ab -> callback(bytes) -> allowance(address,address)
+
+  14. 路径ID: 8f28fd17691045b0
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xbdbc91ab -> callback(bytes) -> approve(address,uint256)
+
+  15. 路径ID: f1e798731914710e
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> lookup_error(0x8bc6beb2)
+
+  16. 路径ID: a1c82e0546e7f681
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> callback(bytes) -> allowance(address,address)
+
+  17. 路径ID: c2000080a382667e
+交易Hash: 2a50db3dac1b4468d226deb53cb34737669b5f93848ac04d4e296ade06f9876c
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> poolRewards()
+
+  18. 路径ID: 92f83919f89147f7
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x7f3ad32c -> balanceOf(address)
+
+  19. 路径ID: 289555f5f06caa01
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> callback(bytes) -> approve(address,uint256)
+
+  20. 路径ID: a68be9d8c2c5259b
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xbdbc91ab -> poolRewards()
+
+  21. 路径ID: 1f8f19f8d8a1cd1b
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0xbdbc91ab -> transferFrom(address,address,uint256)
+
+  22. 路径ID: 22368af2894c0ba7
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> decimals()
+
+  23. 路径ID: 7f966f999f7bbd7b
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x7f3ad32c -> 0xbdbc91ab -> transferFrom(address,address,uint256)
+
+  24. 路径ID: 44bda62b3b5ac2c0
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xbdbc91ab -> decimals()
+
+  25. 路径ID: 363e8e0a9924d3d7
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> balanceOf(address)
+
+  26. 路径ID: f03f4b7e629a8237
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x7f3ad32c -> allowance(address,address)
+
+  27. 路径ID: c1a1166c95d5c50f
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> exactInput((bytes,address,uint256,uint256,uint256)) -> swap(address,bool,int256,uint160,bytes) -> uniswapV3SwapCallback(int256,int256,bytes) -> transferFrom(address,address,uint256)
+
+  28. 路径ID: 96e023cfea9309e2
+交易Hash: 954604de22bc0fe57a132b77b7e9831a138100a5c38dbfd76beab35b754771fa
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> 9b5b74fb00
+
+  29. 路径ID: eda7df9988c109d0
+交易Hash: 954604de22bc0fe57a132b77b7e9831a138100a5c38dbfd76beab35b754771fa
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> 0x9b5b74fb
+
+  30. 路径ID: 30d6f15b4b51e48a
+交易Hash: 995e880635f4a7462a420a58527023f946710167ea4c6c093d7d193062a33b01
+源文件: event_event_2_Barley_Finance_0x356e7481_20250806_104404_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> exactInput((bytes,address,uint256,uint256,uint256)) -> swap(address,bool,int256,uint160,bytes) -> transfer(address,uint256)
+
+------------------------------
+
+文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: 8a522d122d46703f
+交易Hash: 67b88b1b7a0be21fa82fd047fa1da5eed66dee92a8b89335591aa4bbe31c3f36
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 9
+上下文节点数: 16
+边数: 30
+路径序列: ROOT -> redeem(uint256,address,address) -> withdraw(uint256,address) -> withdraw(address,address,uint256,address) -> withdraw(uint256) -> adjusted_balance_of(address) -> adjusted_balance_of(address) -> balanceOf(address) -> balanceOf(address)
+
+  2. 路径ID: 5b4049d97f4c3bfe
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> redeem(address,uint256,address,uint256) -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> 0x1b2758ee
+
+  3. 路径ID: 1b950abbaa048ce0
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> redeem(uint256,uint256,address) -> getPrice() -> getTwap(uint256) -> latestRoundData() -> 0x1b2758ee
+
+  4. 路径ID: cf8173024a81239a
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> redeem(address,uint256,address,uint256) -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> getValueForDataFeed(bytes32)
+
+  5. 路径ID: 6ee3181954a4a2e9
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0xd0ce98fa -> 0x01c5a46c -> getPrice() -> getTwap(uint256) -> latestRoundData() -> 0x1b2758ee
+
+  6. 路径ID: 466f690f227e88e9
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> redeem(uint256,uint256,address) -> getPrice() -> getTwap(uint256) -> latestRoundData() -> getValueForDataFeed(bytes32)
+
+  7. 路径ID: d8ef89ad6beb6402
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0xd0ce98fa -> 0x01c5a46c -> getPrice() -> getTwap(uint256) -> latestRoundData() -> getValueForDataFeed(bytes32)
+
+  8. 路径ID: e4a18cf91f7979fa
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> getSpotPrice(uint256) -> getWeETHByeETH(uint256) -> sharesForAmount(uint256) -> totalShares() -> totalShares()
+
+  9. 路径ID: 4e342c2ef057727a
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> getLatestRoundId()
+
+  10. 路径ID: 593bb50ce3e98db6
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> 0x1b2758ee
+
+  11. 路径ID: 4f189e97458cd10f
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> redeem(address,uint256,address,uint256) -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> latestRoundData()
+
+  12. 路径ID: 41c4686812650198
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x0b27295e -> getRate() -> amountForShare(uint256) -> totalShares() -> totalShares()
+
+  13. 路径ID: 213b586c06d56786
+交易Hash: 67b88b1b7a0be21fa82fd047fa1da5eed66dee92a8b89335591aa4bbe31c3f36
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> redeem(uint256,address,address) -> withdraw(uint256,address) -> withdraw(address,address,uint256,address) -> withdraw(uint256) -> withdraw(uint256)
+
+  14. 路径ID: c57f17c047871cd1
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> redeem(uint256,uint256,address) -> getPrice() -> getTwap(uint256) -> latestRoundData() -> latestRoundData()
+
+  15. 路径ID: e5e9fc38f2a1a19c
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> getValueForDataFeed(bytes32)
+
+  16. 路径ID: 3cdadf3d9c6c83b5
+交易Hash: 67b88b1b7a0be21fa82fd047fa1da5eed66dee92a8b89335591aa4bbe31c3f36
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> redeem(uint256,address,address) -> withdraw(uint256,address) -> withdraw(address,address,uint256,address) -> balanceOf(address)
+
+  17. 路径ID: 9a9b28d50251bf9b
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> 0xd0ce98fa -> 0x01c5a46c -> getPrice() -> getTwap(uint256) -> latestRoundData() -> latestRoundData()
+
+  18. 路径ID: 690882b6677ee46b
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> getSpotPrice(uint256) -> getWeETHByeETH(uint256) -> sharesForAmount(uint256) -> sharesForAmount(uint256)
+
+  19. 路径ID: c7fb5f06b8ac64de
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> getRate() -> amountForShare(uint256) -> totalShares() -> totalShares()
+
+  20. 路径ID: 1e5d48e5b2d02d4c
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x0b27295e -> getRate() -> amountForShare(uint256) -> amountForShare(uint256)
+
+  21. 路径ID: ae84ecf94f25147f
+交易Hash: 830e0af6970ddaec392c5b42a19da6ad2554f129aa05e612ec3b2d02a43a0721
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x93bdfad6 -> 0x02d3c37b -> getUserInfo(address) -> getUserInfo(address)
+
+  22. 路径ID: ae36cc4d55a47ef2
+交易Hash: 86b382d3d48e45bad67d549429cd22dc63a9e6c4dd97a0f9887bac6ae51670f2
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> execute(bytes,bytes[],uint256) -> transferFrom(address,address,uint256) -> maturity() -> implementation()
+
+  23. 路径ID: 3806e8f59580b7b7
+交易Hash: 86b382d3d48e45bad67d549429cd22dc63a9e6c4dd97a0f9887bac6ae51670f2
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> beforeYtTransfer(address,address) -> previewRedeem(uint256) -> previewRedeem(address,uint256) -> previewRedeem(address,uint256)
+
+  24. 路径ID: c6fd0228d08e263b
+交易Hash: 86b382d3d48e45bad67d549429cd22dc63a9e6c4dd97a0f9887bac6ae51670f2
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> balanceOf(address) -> maturity() -> implementation()
+
+  25. 路径ID: 7d8f2fcdd564f28b
+交易Hash: 67b88b1b7a0be21fa82fd047fa1da5eed66dee92a8b89335591aa4bbe31c3f36
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> redeem(uint256,address,address) -> withdraw(uint256,address) -> withdraw(address,address,uint256,address) -> withdraw(address,address,uint256,address)
+
+  26. 路径ID: 04224e360cb7cf61
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xcdc6c7cc -> getPrice() -> getTwap(uint256) -> latestRoundData() -> latestRoundData()
+
+  27. 路径ID: 738bf21f227d7a12
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> getSpotPrice(uint256) -> getWeETHByeETH(uint256) -> getWeETHByeETH(uint256)
+
+  28. 路径ID: a87f227d09d29dd8
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> getSpotPrice(uint256) -> getAmplificationParameter()
+
+  29. 路径ID: 1da00f36dfaa38b2
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> getSpotPrice(uint256) -> getScalingFactors()
+
+  30. 路径ID: 57a20f17e6274604
+交易Hash: 7faf7976dcd962d43f6db829ecd7638f84b2c12854180e9884e8c27f37083852
+源文件: event_event_2_Spectra_0x53635bf7_20250811_104636_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> getSpotPrice(uint256) -> getPoolId()
+
+------------------------------
+
+文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+可疑路径数: 19
+
+  1. 路径ID: 21c8d458c5a766eb
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> unStake(uint8) -> transfer(address,uint256) -> isBlackListAddress(address)
+
+  2. 路径ID: d57c89ffeae003e5
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0xf599d321 -> unStake(uint8) -> transfer(address,uint256) -> isBlackListAddress(address)
+
+  3. 路径ID: 28d3d698bdc4bb00
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> start(uint256) -> transferFrom(address,address,uint256) -> isBlackListAddress(address)
+
+  4. 路径ID: 36d4f6b2bcc95b11
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> stake(uint256,uint8) -> transferFrom(address,address,uint256) -> isBlackListAddress(address)
+
+  5. 路径ID: 37fc58da36a5cdf2
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> uniswapV3SwapCallback(int256,int256,bytes) -> transferFrom(address,address,uint256) -> isBlackListAddress(address)
+
+  6. 路径ID: ee1cb95ab8b51981
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> unStake(uint8)
+
+  7. 路径ID: 9ac4f12b23acb260
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> start(uint256) -> start(uint256)
+
+  8. 路径ID: 618088bbd4fcad93
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x22c3bbd7 -> eth_transfer
+
+  9. 路径ID: 6fffc494f44c2b89
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> eth_transfer
+
+  10. 路径ID: 7c4c8f989672e6c0
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> approve(address,uint256) -> isBlackListAddress(address)
+
+  11. 路径ID: 2e51686f35aead54
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer
+
+  12. 路径ID: d0be5e149fbe7508
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x22c3bbd7 -> approve(address,uint256) -> isBlackListAddress(address)
+
+  13. 路径ID: b0c57f29e800d718
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> transfer(address,uint256)
+
+  14. 路径ID: f14be8c36c039d5f
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0x22c3bbd7 -> 0x22c3bbd7
+
+  15. 路径ID: 8d4a4f12e51a0b2e
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160)) -> swap(address,bool,int256,uint160,bytes) -> balanceOf(address)
+
+  16. 路径ID: 0485e0d0dc5c7f5b
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0xf599d321 -> 0xf599d321
+
+  17. 路径ID: 596bd986ded42f35
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> balanceOf(address)
+
+  18. 路径ID: 09502df2655d0414
+交易Hash: 213991ca681019f599f8f52a25ab6a5e39e690eac2ad206faf24f0c549e844c7
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> 22c3bbd700
+
+  19. 路径ID: 012cd6ecc5ad40f9
+交易Hash: a0dcf9b177702c58c5d0353aff2caeab12589bce204fb2d0e62ccbf5717f1798
+源文件: event_event_3_Vestra_DAO_0x954386cb_20250811_154020_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> f599d32100
+
+------------------------------
+
+文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: 46155bec6ca8c3cd
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> flashLoan(address,address,uint256,bytes) -> onFlashLoan(address,address,uint256,uint256,bytes) -> closeTrove(address,address) -> getEntireSystemBalances() -> fetchPrice(address)
+
+  2. 路径ID: dee661893b1450b4
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> flashLoan(address,address,uint256,bytes) -> onFlashLoan(address,address,uint256,uint256,bytes) -> closeTrove(address,address) -> getEntireSystemBalances() -> priceFeed()
+
+  3. 路径ID: 4d6f0429cd7dba94
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 16
+边数: 30
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> 0x11c61ad3 -> getEntireSystemBalances() -> fetchPrice(address)
+
+  4. 路径ID: 78b2f0eb919fbef4
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> 0x11c61ad3 -> getEntireSystemBalances() -> priceFeed()
+
+  5. 路径ID: b1d6c3bd8a8ecb16
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> flashLoan(address,address,uint256,bytes) -> onFlashLoan(address,address,uint256,uint256,bytes) -> closeTrove(address,address) -> getEntireSystemBalances() -> getEntireSystemBalances()
+
+  6. 路径ID: 42c8da164158b976
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> 0x11c61ad3 -> getEntireSystemBalances() -> getEntireSystemBalances()
+
+  7. 路径ID: c20b87222c2ebeaa
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 5
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> 0x11c61ad3 -> paused()
+
+  8. 路径ID: 4d345d0743134949
+交易Hash: 7c58e683b2c8fdc1780e3a730d99d00fd7ebeb331e19fa3870ff2481c83dc048
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 9
+上下文节点数: 16
+边数: 30
+路径序列: ROOT -> swap(string,address,uint256,bytes) -> swap(address,bytes) -> swap(address,(address,address,address,address,uint256,uint256,uint256),bytes,bytes) -> execute(address) -> unwrap(uint256) -> getPooledEthByShares(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  9. 路径ID: 6c88f6d609e24e93
+交易Hash: 7c58e683b2c8fdc1780e3a730d99d00fd7ebeb331e19fa3870ff2481c83dc048
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> swap(string,address,uint256,bytes) -> swap(address,bytes) -> swap(address,(address,address,address,address,uint256,uint256,uint256),bytes,bytes) -> execute(address) -> 0x07e5c0d2
+
+  10. 路径ID: eaa65acde68ffac8
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x4cb653b7 -> insert(address,uint256,address,address) -> getNominalICR(address) -> getNominalICR(address)
+
+  11. 路径ID: 09c426107dc0c7df
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> receiveFlashLoan(address[],uint256[],uint256[],bytes) -> setDelegateApproval(address,bool)
+
+  12. 路径ID: c7aad494ec2deb33
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x11c61ad3 -> getEntireSystemBalances() -> fetchPrice(address)
+
+  13. 路径ID: 40679db0cf08e1aa
+交易Hash: 6832181c0c3a9b217314abe82d0653c5944c7a79324de4706d2a2fc6ef93e849
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> 0x0ca8ebf1
+
+  14. 路径ID: 01c853e947e8b3a4
+交易Hash: 22bc2a7e2f5087296fa0da9bc2c8f11073e76045443c0c94aff88fb00b4a6fc8
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> withdrawToken(address) -> transfer(address,uint256)
+
+  15. 路径ID: 2a3cb9afae98fc01
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256) -> transfer(address,uint256)
+
+  16. 路径ID: 7aa14e318463d818
+交易Hash: 7c58e683b2c8fdc1780e3a730d99d00fd7ebeb331e19fa3870ff2481c83dc048
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> swap(string,address,uint256,bytes) -> swap(address,bytes) -> swap(address,(address,address,address,address,uint256,uint256,uint256),bytes,bytes) -> transferFrom(address,address,uint256)
+
+  17. 路径ID: 69283bb43be8c706
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> transfer(address,uint256)
+
+  18. 路径ID: 666acce7a3138b1e
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> flashLoan(address,address[],uint256[],bytes) -> getFlashLoanFeePercentage()
+
+  19. 路径ID: 43ee54f69723c420
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> transfer(address,uint256)
+
+  20. 路径ID: 09655d1e8a35b668
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> 0xf87576e8
+
+  21. 路径ID: 5b437b4fd0b1d1c3
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> 0x59361199
+
+  22. 路径ID: f38509a4f05f82db
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x4cb653b7 -> insert(address,uint256,address,address) -> insert(address,uint256,address,address)
+
+  23. 路径ID: 3ac0b5497fd890ca
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> getReserves()
+
+  24. 路径ID: bf62d4094c07d49e
+交易Hash: f9a1333aa8b6375f7ff1c32c67877a72f8106b7fd418d4c6e7ff28cb49a5d8f1
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> deposit()
+
+  25. 路径ID: b6c05d8301fa3cda
+交易Hash: 6832181c0c3a9b217314abe82d0653c5944c7a79324de4706d2a2fc6ef93e849
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> balanceOf(address)
+
+  26. 路径ID: ae334cda50744108
+交易Hash: 6832181c0c3a9b217314abe82d0653c5944c7a79324de4706d2a2fc6ef93e849
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 7
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> swap((address,address,bytes,(address,address,address[],uint256[],address[],uint256[],address,uint256,uint256,uint256,bytes),bytes)) -> callBytes(bytes) -> unwrap(uint256) -> getPooledEthByShares(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  27. 路径ID: 13cbcc590cf8d2b6
+交易Hash: 8c4eb9a7bcb50a27f6c8f8bc6f1a433f704d755994305a6856154cf885ec9b57
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 3
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> getEntireSystemBalances() -> fetchPrice(address)
+
+  28. 路径ID: 920225ac66201e4b
+交易Hash: 6832181c0c3a9b217314abe82d0653c5944c7a79324de4706d2a2fc6ef93e849
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> eth_transfer -> withdraw(uint256) -> eth_transfer -> balanceOf(address)
+
+  29. 路径ID: e7fd841693fa0596
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x11c61ad3 -> getEntireSystemBalances() -> priceFeed()
+
+  30. 路径ID: eeb87cc1e0361994
+交易Hash: 00c503b595946bccaea3d58025b5f9b3726177bbdc9674e634244135282116c7
+源文件: event_event_4_Prisma_Finance_0x7e39e3b3_20250811_164442_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> closeTrove(address,address) -> getEntireSystemBalances() -> fetchPrice(address)
+
+------------------------------
+
+文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: 87c202a51f472317
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 7
+上下文节点数: 17
+边数: 32
+路径序列: ROOT -> 0xfe03cca9 -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> observations(uint256)
+
+  2. 路径ID: bc33e0618b8a557d
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 7
+上下文节点数: 17
+边数: 32
+路径序列: ROOT -> 0xec4f7043 -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> observations(uint256)
+
+  3. 路径ID: 042107827632c4d7
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 7
+上下文节点数: 17
+边数: 32
+路径序列: ROOT -> 0xfe03cca9 -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> _storage()
+
+  4. 路径ID: 9b09a26d22bf7326
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 7
+上下文节点数: 17
+边数: 32
+路径序列: ROOT -> 0xec4f7043 -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> _storage()
+
+  5. 路径ID: 054e47ed099dc7a8
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> mint(address,uint256,uint256) -> 0x58f3d163 -> transfer(address,uint256)
+
+  6. 路径ID: f0905bc650d79089
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x4b940e0a -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> getRewardTokens()
+
+  7. 路径ID: 5f6df294da70dd2d
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x4b940e0a -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> 0xe268b3a4
+
+  8. 路径ID: 1e0d4e65adb0c7f7
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> observations(uint256)
+
+  9. 路径ID: b6fe8d0ab3af84ab
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x7d0fedaa -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> getRewardTokens()
+
+  10. 路径ID: 80162bcf7a48f1b8
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x7d0fedaa -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> 0xe268b3a4
+
+  11. 路径ID: 88eaf64637a552db
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 7
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x0826c023 -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transfer(address,uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  12. 路径ID: 557e07f715f2e88c
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 6
+上下文节点数: 14
+边数: 26
+路径序列: ROOT -> 0xe8f811d0 -> latestRoundData() -> latestAnswer() -> getOracleState(address,uint32) -> _storage()
+
+  13. 路径ID: 394bec281cf560f4
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> mint(address,uint256,uint256) -> 0x58f3d163 -> isValidMarket(address)
+
+  14. 路径ID: 6293487f1528b94e
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> 0xe268b3a4
+
+  15. 路径ID: 7962fb88e2707e03
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0xec4f7043 -> 0x7b1f847c -> transfer(address,uint256)
+
+  16. 路径ID: 95762282964dd7f3
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 8
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0xfe03cca9 -> 0xe8f811d0 -> latestRoundData() -> getStETHByWstETH(uint256) -> getPooledEthByShares(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  17. 路径ID: dbc6a782ff4d2814
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 8
+上下文节点数: 15
+边数: 28
+路径序列: ROOT -> 0xec4f7043 -> 0xe8f811d0 -> latestRoundData() -> getStETHByWstETH(uint256) -> getPooledEthByShares(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  18. 路径ID: 623b5c6f53f9f2bf
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x0826c023 -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transferUnderlyingTo(address,uint256)
+
+  19. 路径ID: 6c2f06a00a55a717
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x0826c023 -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)
+
+  20. 路径ID: c7d00dbc225d339f
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdrawLp(address,address,uint256) -> transfer(address,uint256) -> getRewardTokens()
+
+  21. 路径ID: 41143c490f1b5db6
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> mint(address,uint256,uint256) -> 0x58f3d163 -> 0x58f3d163
+
+  22. 路径ID: 7b2ff5e72513798c
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> executeOperation(address[],uint256[],uint256[],address,bytes) -> zapIn(uint256,uint256,(uint256,uint256,uint256,uint256,uint256),(address,uint256,address,address,address,(uint8,address,bytes,bool)),bool) -> poolInfo(uint256) -> poolInfo(uint256)
+
+  23. 路径ID: 952b595178ca6f30
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> borrow() -> 0xd30f6292 -> 0x1786ef6d
+
+  24. 路径ID: 5785da7efb77fefa
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(address,address,uint256) -> transfer(address,uint256) -> getRewardTokens()
+
+  25. 路径ID: 3a886294db5d61ab
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(address,address,uint256) -> transfer(address,uint256) -> 0xe268b3a4
+
+  26. 路径ID: 1963c24be9c7c7ac
+交易Hash: 04e16a79ff928db2fa88619cdd045cdfc7979a61d836c9c9e585b3d6f6d8bc31
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> executeOperation(address[],uint256[],uint256[],address,bytes) -> zapIn(uint256,uint256,(uint256,uint256,uint256,uint256,uint256),(address,uint256,address,address,address,(uint8,address,bytes,bool)),bool) -> zapIn(uint256,uint256,(uint256,uint256,uint256,uint256,uint256),(address,uint256,address,address,address,(uint8,address,bytes,bool)),bool)
+
+  27. 路径ID: 5b692346da07490a
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(address,uint256,uint256) -> claimRewards(address)
+
+  28. 路径ID: fc89c20fffd816d1
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(address,uint256,uint256) -> getRewardTokens()
+
+  29. 路径ID: 8684fe3ac8dc8e52
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> mint(address,uint256,uint256) -> 0xc7bfd2fd
+
+  30. 路径ID: bb73974a6e331ea7
+交易Hash: 67d6c554314c9b306d683afb3bc4a10e70509ceb0fdf8415a5e270a91fae52de
+源文件: event_event_4_Wise_Lending_0xb90cf1d7_20250806_105402_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> mint(address,uint256,uint256) -> 0x1d52edc4
+
+------------------------------
+
+文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: c4434100ec9a27ef
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> transfer(address,uint256)
+
+  2. 路径ID: effe09b971f193d2
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> transfer(address,uint256) -> transfer(address,uint256)
+
+  3. 路径ID: 4b9fee903dd5629e
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0xabdb31e4 -> accrueInterest() -> balanceOf(address) -> balanceOf(address)
+
+  4. 路径ID: 0e96e22e9fef5c81
+交易Hash: 44037ffc0993327176975e08789b71c1058318f48ddeff25890a577d6555b6ba
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xe96466d0 -> 0x99cd69d1 -> balanceOf(address) -> balanceOf(address)
+
+  5. 路径ID: d9e5e37d9afdce0f
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> flashLoan(address,uint256,bytes) -> onMorphoFlashLoan(uint256,bytes) -> balanceOf(address) -> balanceOf(address)
+
+  6. 路径ID: 18cd1d712f8db09a
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0xabdb31e4 -> accrueInterest() -> accrueInterest()
+
+  7. 路径ID: 855428f2b2325c4f
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0xe96466d0 -> 0x99cd69d1 -> 0x99cd69d1
+
+  8. 路径ID: eb8fcae26b90abe1
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x8dee9460 -> 0x69f4e52d -> 0x69f4e52d
+
+  9. 路径ID: 703ac6b91929ac4b
+交易Hash: 4ac9dee536c0729a9d1285d8c36c04560d2e0799b966e7e5afb6abf2939ad1bc
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xcb70e273 -> 0x69825090
+
+  10. 路径ID: 34dec3f5272c1ba4
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x4dd9cbf4 -> balanceOf(address) -> balanceOf(address)
+
+  11. 路径ID: 3dd0f26b2f089f03
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x8dee9460 -> 0x4b7cab4a
+
+  12. 路径ID: 6979bc0f88e36259
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xe96466d0 -> 0x4b7cab4a
+
+  13. 路径ID: a683d394862722c6
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xabdb31e4 -> 0x4b7cab4a
+
+  14. 路径ID: 3fc9d0f1774413ba
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0xf7ad458b -> balanceOf(address) -> balanceOf(address)
+
+  15. 路径ID: 4c485e7a16bf2076
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xe96466d0 -> 0x99cd69d1 -> balanceOf(address) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  16. 路径ID: 795fed805e27643e
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x8dee9460 -> 0x69f4e52d -> balanceOf(address) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  17. 路径ID: f1c6be71bd4df866
+交易Hash: 44037ffc0993327176975e08789b71c1058318f48ddeff25890a577d6555b6ba
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> transfer(address,uint256) -> transfer(address,uint256)
+
+  18. 路径ID: c8bded07e87619c3
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> 0x94a76cbb -> 0x5b2e4dc5 -> latestRoundData() -> latestRoundData()
+
+  19. 路径ID: 7ae23ceb0cd8fff5
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 2
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> transfer(address,uint256)
+
+  20. 路径ID: 5ad1923900777e66
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0xf7ad458b -> 0xf7ad458b
+
+  21. 路径ID: e5215c6a29fa03bd
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x69f4e52d -> 0x69f4e52d
+
+  22. 路径ID: 2881cebfeb5710a1
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x4dd9cbf4 -> 0x4dd9cbf4
+
+  23. 路径ID: 9c5ac8c9f16fce3d
+交易Hash: 4ac9dee536c0729a9d1285d8c36c04560d2e0799b966e7e5afb6abf2939ad1bc
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> exchange(int128,int128,uint256,uint256) -> balanceOf(address) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  24. 路径ID: cb46a0d7fca95e7a
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0x4dd9cbf4 -> balanceOf(address) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  25. 路径ID: 87d0ce0a4eeab9f6
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> getWstETHByStETH(uint256) -> getSharesByPooledEth(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  26. 路径ID: 6c93bfb526885fe0
+交易Hash: 4ac9dee536c0729a9d1285d8c36c04560d2e0799b966e7e5afb6abf2939ad1bc
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0xcb70e273 -> allowance(address,address) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  27. 路径ID: 2ef2d50adb77c17a
+交易Hash: dff3f578284507a25d162df3f8a7fdfbd0d2078de80efaafd9b930750d2174e0
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 2
+上下文节点数: 2
+边数: 2
+路径序列: ROOT -> eth_transfer
+
+  28. 路径ID: 502008e08edcd641
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> token1Data() -> token1Data()
+
+  29. 路径ID: 2eea4df162e82043
+交易Hash: 44037ffc0993327176975e08789b71c1058318f48ddeff25890a577d6555b6ba
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> wrap(uint256) -> getSharesByPooledEth(uint256) -> getApp(bytes32,bytes32) -> getApp(bytes32,bytes32)
+
+  30. 路径ID: 3869df7c782fb07e
+交易Hash: b8ea8725dcdfd91006558bf846d636baa2365de52a8b293ca62f4a1b111072df
+源文件: event_event_5_UniLend_0x55f5f805_20250806_105536_labeled.csv
+路径节点数: 2
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> balanceOf(address)
+
+------------------------------
+
+文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+可疑路径数: 30
+
+  1. 路径ID: d116a7465e5db78d
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x863df8af -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transfer(address,uint256)
+
+  2. 路径ID: 56325d03f4501545
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> repay(uint256,uint256) -> dispatch() -> 0x03ddf252
+
+  3. 路径ID: 8a0d6faeb788b288
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> repay(uint256,uint256) -> dispatch() -> balanceOf(address)
+
+  4. 路径ID: e4a05133c263ff74
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x863df8af -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> transferUnderlyingTo(address,uint256) -> transferUnderlyingTo(address,uint256)
+
+  5. 路径ID: c576a0d0fbbbdaf5
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x863df8af -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16) -> flashLoan(address,address[],uint256[],uint256[],address,bytes,uint16)
+
+  6. 路径ID: b694699dd35ce176
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> latestAnswer() -> latestAnswer()
+
+  7. 路径ID: 09f5fea1cd5cdcbf
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> repay(uint256,uint256) -> dispatch() -> transferFrom(address,address,uint256)
+
+  8. 路径ID: b9097ac09d5ca360
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> withdraw(uint256,uint256) -> dispatch() -> latestAnswer() -> latestAnswer()
+
+  9. 路径ID: f083289ea396e398
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> repay(uint256,uint256) -> dispatch() -> repay(uint256,uint256)
+
+  10. 路径ID: 71fe07cb43f75d49
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0xa515d3c6 -> checkLiquidation(address,address,address,address) -> dispatch() -> getPrice(address)
+
+  11. 路径ID: 659f561a3a10f7aa
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 6
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0xa515d3c6 -> checkLiquidation(address,address,address,address) -> dispatch() -> latestAnswer() -> latestAnswer()
+
+  12. 路径ID: e5526c159be1e9f8
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256,uint256) -> dispatch() -> transfer(address,uint256)
+
+  13. 路径ID: e94f2cd2bdef6767
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> liquidate(address,address,address,uint256,uint256) -> dispatch() -> getPrice(address)
+
+  14. 路径ID: cd51d11f011ef59b
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> 0x03ddf252
+
+  15. 路径ID: 8db82b342e9a7b33
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> liquidate(address,address,address,uint256,uint256) -> dispatch() -> latestAnswer() -> latestAnswer()
+
+  16. 路径ID: a5bbba7aa286387d
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> repay(uint256,uint256) -> dispatch() -> computeInterestRate(address,uint32)
+
+  17. 路径ID: 0171611c1868b321
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x9f443549 -> deposit(uint256,uint256) -> dispatch() -> transferFrom(address,address,uint256)
+
+  18. 路径ID: a17b0cc12d0106cd
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> balanceOf(address)
+
+  19. 路径ID: 62487d20f8adaeb2
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> 0x9f443549 -> deposit(uint256,uint256) -> dispatch() -> balanceOf(address)
+
+  20. 路径ID: e537458e9b298679
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> executeOperation(address[],uint256[],uint256[],address,bytes) -> eth_transfer
+
+  21. 路径ID: 39e242e900ee0a99
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> requireLiquidity(address)
+
+  22. 路径ID: 1061e8ceb9ef535f
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdraw(uint256,uint256) -> dispatch() -> balanceOf(address)
+
+  23. 路径ID: 14877c0178a4e366
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x9f443549 -> deposit(uint256,uint256) -> dispatch() -> 0x03ddf252
+
+  24. 路径ID: 4ef57f281652abc3
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256,uint256) -> dispatch() -> 0x03ddf252
+
+  25. 路径ID: 1a818278e2a2d46f
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 10
+边数: 18
+路径序列: ROOT -> 0xa515d3c6 -> checkLiquidation(address,address,address,address) -> dispatch() -> balanceOf(address)
+
+  26. 路径ID: e6e9e8589d606673
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> mint(uint256,uint256)
+
+  27. 路径ID: 4f91b8f623ea0ff0
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> donateToReserves(uint256,uint256) -> dispatch() -> balanceOf(address)
+
+  28. 路径ID: 11583492d0754c26
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> mint(uint256,uint256) -> dispatch() -> computeInterestRate(address,uint32)
+
+  29. 路径ID: f7ac4e8e834ea957
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256,uint256) -> dispatch() -> requireLiquidity(address)
+
+  30. 路径ID: e24cc64cd8aa6107
+交易Hash: c310a0affe2169d1f6feec1c63dbc7f7c62a887fa48795d327d4d2da2d6b111d
+源文件: event_event_6_Euler_Finance_0xebc29199_20250806_105743_labeled.csv
+路径节点数: 5
+上下文节点数: 12
+边数: 22
+路径序列: ROOT -> 0x9f443549 -> deposit(uint256,uint256) -> dispatch() -> computeInterestRate(address,uint32)
+
+------------------------------
+
+文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+可疑路径数: 28
+
+  1. 路径ID: aa541737b4aa1284
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 7
+上下文节点数: 16
+边数: 30
+路径序列: ROOT -> S(uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETH(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256)
+
+  2. 路径ID: 830d2b828c8f1dd3
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 7
+上下文节点数: 16
+边数: 30
+路径序列: ROOT -> S(uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETH(uint256,uint256,address[],address,uint256) -> swap(uint256,uint256,address,bytes) -> balanceOf(address)
+
+  3. 路径ID: 680e34cb59aa2989
+交易Hash: 1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> 0x35f9a906 -> transfer(address,uint256)
+
+  4. 路径ID: b629d187c5c2dd4a
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 6
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> 0x22a10c2d -> claim(uint256[],address) -> eth_transfer -> withdraw(uint256[],address) -> transfer(address,uint256)
+
+  5. 路径ID: 373b7939cbf92bd0
+交易Hash: 1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> 0x35f9a906 -> balanceOf(address)
+
+  6. 路径ID: 2fefbed28581cc90
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> S(uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETH(uint256,uint256,address[],address,uint256) -> getReserves()
+
+  7. 路径ID: 3d1ccdec52d4797f
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x944351ec -> distribute() -> getCurrentEpoch()
+
+  8. 路径ID: 227b0cb142f2bc1e
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 5
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> claim(uint256[],address) -> eth_transfer -> withdraw(uint256[],address) -> transfer(address,uint256)
+
+  9. 路径ID: d49550d09e02f5bf
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> S(uint256) -> WETH()
+
+  10. 路径ID: 987d33af7f55383c
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 5
+上下文节点数: 11
+边数: 20
+路径序列: ROOT -> S(uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> WETH()
+
+  11. 路径ID: d1dbc74bcd24446d
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> getDeposit(address,uint256)
+
+  12. 路径ID: dfd917619e0f73dd
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 6
+上下文节点数: 13
+边数: 24
+路径序列: ROOT -> S(uint256) -> swapExactTokensForETHSupportingFeeOnTransferTokens(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256) -> swapExactTokensForETH(uint256,uint256,address[],address,uint256) -> transferFrom(address,address,uint256)
+
+  13. 路径ID: 36b6e401860d3740
+交易Hash: a3e44acf199390a92ab9c1cee0f21b387134fa7dc904006eb54da1a2c5e3b7a3
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> get_block_hash_257335279069929(uint256)
+
+  14. 路径ID: c5d246256b253a34
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> balanceOf(address)
+
+  15. 路径ID: 4d598df1abe4186f
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> swap(uint256,uint256,address,bytes) -> transfer(address,uint256)
+
+  16. 路径ID: c4ca3d581b0f69d3
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> S(uint256) -> approve(address,uint256)
+
+  17. 路径ID: 7c70cd1d8b869ce3
+交易Hash: bab8da842a01eb199eb741d1118893345e4c5845b493e126659c1b5991beb635
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> getMessage()
+
+  18. 路径ID: 500f90a5931d519d
+交易Hash: 1808fea416f6fd159397bbbca13552e0a9e9dbb2af8abdd69c41c7be03e138a9
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> 35f9a90600
+
+  19. 路径ID: 9f866dc2de4ce70d
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> 944351ec00
+
+  20. 路径ID: e3be82b7e5ee0fb0
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 4
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> 0x944351ec -> distribute() -> distribute()
+
+  21. 路径ID: 251432ff929db535
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> getReserves()
+
+  22. 路径ID: 2fcc27c4c235837b
+交易Hash: 599c982a58a00525e16bc863729d83f247a02b04f4e6863e9f5cc9f24519261a
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> 0000000000
+
+  23. 路径ID: c65426ae16feae6e
+交易Hash: e7014b36a0d3cafd4526116f1954ef1be6b508d38e2569638d357a739c22f629
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 2
+边数: 2
+路径序列: ROOT -> eth_transfer
+
+  24. 路径ID: df2906fb10aa7a14
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> swap(uint256,uint256,address,bytes) -> balanceOf(address)
+
+  25. 路径ID: 9f33c449911c3c9d
+交易Hash: bab8da842a01eb199eb741d1118893345e4c5845b493e126659c1b5991beb635
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 2
+上下文节点数: 3
+边数: 4
+路径序列: ROOT -> contract_creation_or_eth_transfer
+
+  26. 路径ID: 40126cf3b06f2835
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 5
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer -> eth_transfer
+
+  27. 路径ID: fbd3cfb797d12a8e
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer
+
+  28. 路径ID: 01d09957f88f6691
+交易Hash: 90b4fcf583444d44efb8625e6f253cfcb786d2f4eda7198bdab67a54108cd5f4
+源文件: event_event_8_OTSea_0x00000000_20250806_110443_labeled.csv
+路径节点数: 6
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> withdraw(uint256) -> eth_transfer -> eth_transfer -> eth_transfer -> eth_transfer
+
+------------------------------
+
+文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+可疑路径数: 18
+
+  1. 路径ID: 329f2ae5c00fed88
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> currentMintRateUSD() -> canMigrate()
+
+  2. 路径ID: 26020c653e8ab192
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> currentMintRateUSD() -> mint(address,uint256)
+
+  3. 路径ID: 3acfa771aaf338e8
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> rewardTrader(address,address,uint256) -> computeVolumeUSD(address,uint256)
+
+  4. 路径ID: 26e284995417ecf8
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> computeDiscountedFee((bool,address,uint256,uint256,uint16,uint16))
+
+  5. 路径ID: bc91c3d41b179e13
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> transfer(address,uint256) -> transfer(address,uint256)
+
+  6. 路径ID: d37e7932871eb5e9
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> balanceOf(address) -> balanceOf(address)
+
+  7. 路径ID: 8dccf4c4f5df08b8
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> transferFrom(address,address,uint256) -> transferFrom(address,address,uint256)
+
+  8. 路径ID: ba2fd67ccc7e1991
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 2
+上下文节点数: 5
+边数: 8
+路径序列: ROOT -> 0xc67ea9d1
+
+  9. 路径ID: fcfed5a13a59b21a
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 2
+上下文节点数: 4
+边数: 6
+路径序列: ROOT -> bf4c1d6000
+
+  10. 路径ID: 80006539d3b7783e
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 4
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> rewardTrader(address,address,uint256) -> latestRoundData() -> latestRoundData()
+
+  11. 路径ID: 6e547b84eb817998
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 4
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> 0xbf4c1d60 -> approve(address,uint256) -> approve(address,uint256)
+
+  12. 路径ID: 72c3998c82fccf28
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> allowance(address,address) -> allowance(address,address)
+
+  13. 路径ID: 86b5983d1734d659
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 6
+边数: 10
+路径序列: ROOT -> approve(address,uint256) -> approve(address,uint256)
+
+  14. 路径ID: ab89ca21769f9f42
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[])) -> isFeeTokenAllowed(address)
+
+  15. 路径ID: b214ca8d3e6fdd5c
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[])) -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[]))
+
+  16. 路径ID: 51cc50a10fa220fe
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 7
+边数: 12
+路径序列: ROOT -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[])) -> fill(((address,(address,address,uint256)),(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[]),(bool,bool,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256,uint256))
+
+  17. 路径ID: 9a52578a98c6221f
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 3
+上下文节点数: 8
+边数: 14
+路径序列: ROOT -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[])) -> balanceOf(address)
+
+  18. 路径ID: 6c25b14fbacc9744
+交易Hash: 138daa4cbeaa3db42eefcec26e234fc2c89a4aa17d6b1870fc460b2856fd11a6
+源文件: event_event_9_Dexible_0x684083f3_20250806_110455_labeled.csv
+路径节点数: 4
+上下文节点数: 9
+边数: 16
+路径序列: ROOT -> selfSwap((address,(uint112,address),(uint112,address),(address,address,(uint112,address),bytes)[])) -> transferFrom(address,address,uint256) -> transferFrom(address,address,uint256)
+
+------------------------------
+

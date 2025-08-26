@@ -1,0 +1,51 @@
+{
+  "model_configs": [
+    {
+      "name": "GNN-CallTree-GIN",
+      "model_type": "gin",
+      "embedding_dim": 64,
+      "hidden_dim": 128,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "numerical_features": 14
+    },
+    {
+      "name": "GNN-CallTree-SAGE",
+      "model_type": "sage",
+      "embedding_dim": 64,
+      "hidden_dim": 128,
+      "num_layers": 3,
+      "dropout": 0.3,
+      "numerical_features": 14
+    }
+  ],
+  "train_config": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "num_epochs": 50,
+    "batch_size": 32,
+    "patience": 10,
+    "loss_type": "bce"
+  },
+  "vocab_size": 431,
+  "suspicious_methods": [
+    "selfdestruct",
+    "fallback",
+    "initialize",
+    "transfer",
+    "transferFrom",
+    "receive",
+    "onlyOwner",
+    "hasRole",
+    "ecrecover",
+    "assert",
+    "require",
+    "tokensReceived",
+    "tokensToSend",
+    "balanceOf",
+    "sweepToken",
+    "isOperationReady",
+    "beforeCall"
+  ],
+  "top_k": 30
+}
